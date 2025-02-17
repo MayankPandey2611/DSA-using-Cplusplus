@@ -23,7 +23,8 @@ int main(){
 
 // cout<<endl;
 
-    //2. CHECK PRIME.
+    //2. CHECK  NUMBER DIVISIBLE BY 5.
+
     // int num3 ;
     // cout<<"enter the number: ";
     // cin >> num3;
@@ -112,8 +113,8 @@ int main(){
 
 //11. GREATEST OF THREE NUMBERS.
 
-int a,b,c;
-cin>>a>>b>>c; 
-(a>b && a>c)? cout<<a<<" is greater than b and c" : (b>a && b>c)? cout<<b<<" is greater than a and c": cout<<c<<" is greater than a and b";
+// int a,b,c;
+// cin>>a>>b>>c; 
+// (a>b && a>c)? cout<<a<<" is greater than b and c" : (b>a && b>c)? cout<<b<<" is greater than a and c": cout<<c<<" is greater than a and b";
 
-}
+// }

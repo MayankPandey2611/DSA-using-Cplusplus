@@ -45,10 +45,10 @@ int main()
     // int a,b,c;
     // cin>>a>>b>>c;
 
-    // if(a>=b && a>=c){
+    // if(a>=b && a>c){
     //     cout<<a<<" is greatest";
     // }
-    // else if(b>a && b>=c){
+    // else if(b>a && b>c){
     //     cout<<b<<" is greatest";
     // }
     // else{
