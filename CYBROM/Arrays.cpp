@@ -109,17 +109,17 @@ int main()
 
   // 12.GREATEST ELEMENT IN ARRAY.
 
-  int arr[] = {10, 32, 11, 10, 1};
-  int max = arr[0];
+  // int arr[] = {10, 32, 11, 10, 1};
+  // int max = arr[0];
 
-  for (int i = 1; i < 5; i++)
-  {
-    if (arr[i] > max)
-    {
-      max = arr[i];
-    }
-  }
-  cout << max;
+  // for (int i = 1; i < 5; i++)
+  // {
+  //   if (arr[i] > max)
+  //   {
+  //     max = arr[i];
+  //   }
+  // }
+  // cout << max;
 
   // 13. SMALLEST ELEMENT IN ARRAY.
 
@@ -132,4 +132,59 @@ int main()
   // }
   // }
   // cout<<max;
+
+
+
+  //14. REVERSE AN ARRAY.
+
+//   int arr[]={1,2,3,4,5,6};
+//   int i=0;
+//   int j=5;
+
+//   while(i<j){
+//     int temp=arr[i];
+//     arr[i]=arr[j];
+//     arr[j]=temp;
+//     i++;
+//     j--;
+//   }
+// for(int i=0; i<6; i++){
+//   cout<<arr[i]<<" ";
+// }
+
+
+// 15.CHECK PALINDROME (METHOD 1.(!=)).
+
+int arr[]={1,1,2,1,1};
+int i=0;
+int j=4;
+
+while(i!=j){
+  if(arr[i]!=arr[j]){
+    cout<<"Not palindrome.";
+    return 0;
+  }
+  i++;
+  j--;
+}
+cout<<"Palindrome";
+
+
+
+// METHOD 2. (<).
+
+int arr[]={1,2,2,1,2};
+int i=0;
+int j=4;
+
+while(i<j){
+  if(arr[i]!=arr[j]){
+    cout<<"Not palindrome.";
+    return 0;
+  }
+  i++;
+  j--;
+}
+cout<<"Palindrome";
+
 }
