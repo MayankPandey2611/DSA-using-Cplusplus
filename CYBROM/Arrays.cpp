@@ -155,36 +155,92 @@ int main()
 
 // 15.CHECK PALINDROME (METHOD 1.(!=)).
 
-int arr[]={1,1,2,1,1};
-int i=0;
-int j=4;
+// int arr[]={1,1,2,1,1};
+// int i=0;
+// int j=4;
 
-while(i!=j){
-  if(arr[i]!=arr[j]){
-    cout<<"Not palindrome.";
-    return 0;
-  }
-  i++;
-  j--;
-}
-cout<<"Palindrome";
+// while(i!=j){
+//   if(arr[i]!=arr[j]){
+//     cout<<"Not palindrome.";
+//     return 0;
+//   }
+//   i++;
+//   j--;
+// }
+// cout<<"Palindrome";
 
 
 
 // METHOD 2. (<).
 
-int arr[]={1,2,2,1,2};
-int i=0;
-int j=4;
+// int arr[]={1,2,2,1,2};
+// int i=0;
+// int j=4;
 
-while(i<j){
-  if(arr[i]!=arr[j]){
-    cout<<"Not palindrome.";
-    return 0;
+// while(i<j){
+//   if(arr[i]!=arr[j]){
+//     cout<<"Not palindrome.";
+//     return 0;
+//   }
+//   i++;
+//   j--;
+// }
+// cout<<"Palindrome";
+
+
+// 16. ASCENTING ORDER IN AN ARRAY.
+
+// int arr[]={2,1,2,1,3,2};
+
+// for(int i=0; i<6; i++){
+//   for(int j=i+1; j<6; j++){
+//     if(arr[j] <= arr[i]){
+//       int temp = arr[i];
+//       arr[i] = arr[j];
+//       arr[j] = temp;
+//     }
+//   }
+// }
+
+// for(int i=0; i<6; i++){
+//   cout<<arr[i]<<" ";
+// }
+
+
+// 17. DESCENTING ORDER IN AN ARRAY.
+
+// int arr[]={1,2,1,2,3,4};
+
+// for(int i=0; i<6; i++){
+//   for(int j=i+1; j<6; j++){
+//     if(arr[j] > arr[i]){
+//       int temp = arr[i];
+//       arr[i] = arr[j];
+//       arr[j] = temp;
+//     }
+//   }
+// }
+
+// for(int i=0; i<6; i++){
+//   cout<<arr[i]<<" ";
+// }
+
+
+// 18. REMOVE THE DUPLICATE FROM AN ARRAY.
+
+int arr[]={2,3,3,1,6,1};
+
+for(int i=0; i<6; i++){
+  for(int j=i+1; j<6; j++){
+    if(arr[j]==arr[i]){
+      arr[j]=-1;
+    }
   }
-  i++;
-  j--;
 }
-cout<<"Palindrome";
 
+for(int i=0 ;i<6; i++ ){
+  if(arr[i]!=-1){
+    cout<<arr[i]<<" ";
+  }
+}
 }
