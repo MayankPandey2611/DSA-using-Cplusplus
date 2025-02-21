@@ -228,19 +228,37 @@ int main()
 
 // 18. REMOVE THE DUPLICATE FROM AN ARRAY.
 
-int arr[]={2,3,3,1,6,1};
+// int arr[]={2,3,3,1,6,1};
 
-for(int i=0; i<6; i++){
-  for(int j=i+1; j<6; j++){
-    if(arr[j]==arr[i]){
-      arr[j]=-1;
-    }
-  }
-}
+// for(int i=0; i<6; i++){
+//   for(int j=i+1; j<6; j++){
+//     if(arr[j]==arr[i]){
+//       arr[j]=-1;
+//     }
+//   }
+// }
 
-for(int i=0 ;i<6; i++ ){
+// for(int i=0 ;i<6; i++ ){
+//   if(arr[i]!=-1){
+//     cout<<arr[i]<<" ";
+//   }
+// }
+
+
+// 19. COUNT THE FREQUENCY OF ELEMENTS PRESENT IN ARRAY.
+
+int arr[]={1,2,1,2,1,3,4,1};
+
+for(int i=0; i<8; i++){
   if(arr[i]!=-1){
-    cout<<arr[i]<<" ";
+    int count=1;
+  for(int j=i+1; j<8; j++){
+      if(arr[j]==arr[i]){
+        arr[j]=-1;
+        count++;
+      }
+  }
+  cout<<arr[i]<<" = "<<count<<endl;
   }
 }
 }
