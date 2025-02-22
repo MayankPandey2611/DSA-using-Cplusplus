@@ -247,18 +247,71 @@ int main()
 
 // 19. COUNT THE FREQUENCY OF ELEMENTS PRESENT IN ARRAY.
 
-int arr[]={1,2,1,2,1,3,4,1};
+// int arr[]={1,2,1,2,1,3,4,1};
 
-for(int i=0; i<8; i++){
-  if(arr[i]!=-1){
-    int count=1;
-  for(int j=i+1; j<8; j++){
-      if(arr[j]==arr[i]){
-        arr[j]=-1;
-        count++;
-      }
+// for(int i=0; i<8; i++){
+//   if(arr[i]!=-1){
+//     int count=1;
+//   for(int j=i+1; j<8; j++){
+//       if(arr[j]==arr[i]){
+//         arr[j]=-1;
+//         count++;
+//       }
+//   }
+//   cout<<arr[i]<<" = "<<count<<endl;
+//   }
+// }
+
+
+
+// 20.  SECOND LARGEST ELEMENT IN AN ARRAY.
+
+// int arr[]={2,3,4,5,1,7};
+
+// for(int i=0; i<2; i++){
+//   for(int j=i+1; j<6; j++){
+//     if(arr[j]>arr[i]){
+//       int temp = arr[i];
+//       arr[i] = arr[j];
+//       arr[j]=temp;
+//     }
+//   }
+// }
+// cout<<arr[1];
+
+
+// 21. FIND KTH LARGEST ELEMENT IN AN ARRAY.
+
+// int arr[]={2,3,4,5,6,7};
+// int k;
+// cin>>k;
+
+// for(int i=0; i<k; i++){
+//   for(int j=i+1; j<6; j++){
+//     if(arr[j]>arr[i]){
+//       int temp= arr[i];
+//       arr[i]= arr[j];
+//       arr[j]= temp;
+//     }
+//   }
+// }
+// cout<<arr[k-1];
+
+
+// 22. MOVE ZEROES IN THE END OF AN ARRAY.
+
+int  arr[]={1,2,0,3,0,2,9,0,6};
+int j=0; 
+for(int i=0; i<9; i++){
+  if(arr[i]!=0){
+    int temp = arr[i];
+    arr[i]= arr[j];
+    arr[j] = temp;
+    j++;
   }
-  cout<<arr[i]<<" = "<<count<<endl;
-  }
+}
+
+for(int i=0; i<9; i++){
+  cout<<arr[i]<<" ";
 }
 }
