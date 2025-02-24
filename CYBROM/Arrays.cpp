@@ -300,18 +300,46 @@ int main()
 
 // 22. MOVE ZEROES IN THE END OF AN ARRAY.
 
-int  arr[]={1,2,0,3,0,2,9,0,6};
-int j=0; 
-for(int i=0; i<9; i++){
-  if(arr[i]!=0){
-    int temp = arr[i];
-    arr[i]= arr[j];
-    arr[j] = temp;
-    j++;
+// int  arr[]={1,2,0,3,0,2,9,0,6};
+// int j=0; 
+// for(int i=0; i<9; i++){
+//   if(arr[i]!=0){
+//     int temp = arr[i];
+//     arr[i]= arr[j];
+//     arr[j] = temp;
+//     j++;
+//   }
+// }
+
+// for(int i=0; i<9; i++){
+//   cout<<arr[i]<<" ";
+// }
+
+// PRACTICE QUESTION 1. FIND THE TARGET ELEMENT IN AN ARRAY.
+
+// int arr[]={1,2,3,4,5};
+// int target;
+// cin>>target;
+// for(int i=0;i<4; i++){
+//   if(arr[i]==target){
+//     cout<<"Yes";
+//     return 0;
+//   }
+// }
+// cout<<"No";
+
+
+// PRACTICE QUESTION 2. COUNT NUMBER OF ZEROS IN AN ARRAY.
+
+int arr[]={1,2,3,4,5};
+int count=0;
+
+for(int i=0; i<=5; i++){
+  if(arr[i]==0){
+    count++;
   }
 }
 
-for(int i=0; i<9; i++){
-  cout<<arr[i]<<" ";
-}
+cout<<count;
+
 }
