@@ -331,15 +331,49 @@ int main()
 
 // PRACTICE QUESTION 2. COUNT NUMBER OF ZEROS IN AN ARRAY.
 
-int arr[]={1,2,3,4,5};
-int count=0;
+// int arr[]={1,2,3,4,5};
+// int count=0;
 
-for(int i=0; i<=5; i++){
-  if(arr[i]==0){
-    count++;
+// for(int i=0; i<=5; i++){
+//   if(arr[i]==0){
+//     count++;
+//   }
+// }
+
+// cout<<count;
+
+
+//23. FIND THE MISSING VALUE FROM AN ARRAY.(SINGLE OR MULTIPLY BOTH)
+
+// int arr[]={1,5,17,19,23};
+
+// for(int i=0; i<4; i++){
+//   if(arr[i+1] - arr[i] > 1){
+//     for(int j=arr[i]+1; j<arr[i+1]; j++){
+//       cout<<j<<" ";
+//     }
+//    cout<<endl;
+//   }
+// }
+
+
+// int arr[]={1,2,3,4,5};
+// for(int i=0; i<5; i++){
+//   if(arr[i]<arr[i+1]){
+//     cout<<"ascenting";
+//     return 0;
+//   }
+// }
+// cout<<"no";
+
+
+int arr[]={5,4,3,2,1};
+for(int i=0; i<5; i++){
+  if(arr[i]>arr[i+1]){
+    cout<<"decenting";
+    return 0;
   }
 }
-
-cout<<count;
+cout<<"no";
 
 }
