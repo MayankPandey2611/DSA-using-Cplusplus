@@ -357,6 +357,8 @@ int main()
 // }
 
 
+// 24. CHECK THE ARRAY IS IN ASCENTING ORDER OR NOT. 
+
 // int arr[]={1,2,3,4,5};
 // for(int i=0; i<5; i++){
 //   if(arr[i]<arr[i+1]){
@@ -367,13 +369,33 @@ int main()
 // cout<<"no";
 
 
-int arr[]={5,4,3,2,1};
-for(int i=0; i<5; i++){
-  if(arr[i]>arr[i+1]){
-    cout<<"decenting";
-    return 0;
-  }
+// 25. CHECK THE ARRAY IS IN DECENTING ORDER OR NOT.
+
+// int arr[]={5,4,3,2,1};
+// for(int i=0; i<5; i++){
+//   if(arr[i]>arr[i+1]){
+//     cout<<"decenting";
+//     return 0;
+//   }
+// }
+// cout<<"no";
+
+
+// 26. REVERSE AN ARRAY USING FOR LOOP.
+
+int arr[]={1,2,3,4,5};
+int j=4;
+for(int i=0; i<j; i++){
+   int temp=arr[i];
+   arr[i]=arr[j];
+   arr[j]=temp;
+   j--;
+   
 }
-cout<<"no";
+
+for(int i=0; i<5; i++){
+  cout<<arr[i]<<" ";
+}
+
 
 }
