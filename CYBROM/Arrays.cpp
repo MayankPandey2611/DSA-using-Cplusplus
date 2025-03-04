@@ -93,7 +93,7 @@ int main()
   //   }
   //   cout<<sum;
 
-  // 11. FINDING THE TARGET FROM THE ARRAY.
+  // 11. FINDING HOW MANY TIMES THE TARGET PRESENT IN AN ARRAY.
 
   // int arr[]={1,2,1,2,3};
   // int target;
@@ -173,7 +173,7 @@ int main()
 
 // METHOD 2. (<).
 
-// int arr[]={1,2,2,1,2};
+// int arr[]={1,1,2,1,1};
 // int i=0;
 // int j=4;
 
@@ -190,11 +190,11 @@ int main()
 
 // 16. ASCENTING ORDER IN AN ARRAY.
 
-// int arr[]={2,1,2,1,3,2};
+// int arr[]={2,3,2,1,3,2,2};
 
-// for(int i=0; i<6; i++){
-//   for(int j=i+1; j<6; j++){
-//     if(arr[j] <= arr[i]){
+// for(int i=0; i<7; i++){
+//   for(int j=i+1; j<7; j++){
+//     if(arr[j] < arr[i]){
 //       int temp = arr[i];
 //       arr[i] = arr[j];
 //       arr[j] = temp;
@@ -202,14 +202,14 @@ int main()
 //   }
 // }
 
-// for(int i=0; i<6; i++){
+// for(int i=0; i<7; i++){
 //   cout<<arr[i]<<" ";
 // }
 
 
 // 17. DESCENTING ORDER IN AN ARRAY.
 
-// int arr[]={1,2,1,2,3,4};
+// int arr[]={1,0,1,2,3,4};
 
 // for(int i=0; i<6; i++){
 //   for(int j=i+1; j<6; j++){
@@ -331,10 +331,10 @@ int main()
 
 // PRACTICE QUESTION 2. COUNT NUMBER OF ZEROS IN AN ARRAY.
 
-// int arr[]={1,2,3,4,5};
+// int arr[]={1,2,3,0,0};
 // int count=0;
 
-// for(int i=0; i<=5; i++){
+// for(int i=0; i<5; i++){
 //   if(arr[i]==0){
 //     count++;
 //   }
@@ -354,13 +354,14 @@ int main()
 //     }
 //    cout<<endl;
 //   }
-// }
+
 
 
 // 24. CHECK THE ARRAY IS IN ASCENTING ORDER OR NOT. 
 
 // int arr[]={1,2,3,4,5};
 // for(int i=0; i<5; i++){
+
 //   if(arr[i]<arr[i+1]){
 //     cout<<"ascenting";
 //     return 0;
@@ -383,19 +384,117 @@ int main()
 
 // 26. REVERSE AN ARRAY USING FOR LOOP.
 
-int arr[]={1,2,3,4,5};
-int j=4;
-for(int i=0; i<j; i++){
-   int temp=arr[i];
-   arr[i]=arr[j];
-   arr[j]=temp;
-   j--;
+// int arr[]={1,2,3,4,5};
+// int j=4;
+// for(int i=0; i<j; i++){
+//    int temp=arr[i];
+//    arr[i]=arr[j];
+//    arr[j]=temp;
+//    j--;
    
-}
+// }
 
-for(int i=0; i<5; i++){
-  cout<<arr[i]<<" ";
-}
+// for(int i=0; i<5; i++){
+//   cout<<arr[i]<<" ";
+// }
+
+// 27. FIND MAXIMUM PRODUCT OF TWO ELEMENTS.
+
+// int arr[]={6,3,9,5,10};
+
+// int max= arr[0]*arr[1];
+
+// for(int i=0; i<5; i++){
+//   for(int j=i+1; j<5; j++){
+//     int a=arr[j]*arr[i];
+//     if(a>max){
+//       max=a;
+//     }
+//   }
+// }
+// cout<<max;
 
 
+// 28. CHECK THAT THE ARRAYS ARE EQUAL OR NOT.
+
+// int arr1[]={1,2,3,4,5};
+// int arr2[]={1,2,3,4,5};
+
+// for(int i=0; i<5; i++){
+//   if(arr1[i]!=arr2[i]){
+//     cout<<"No Both Arrays Are Different.";
+//     return 0;
+//   }
+// }
+// cout<<"Yes Both Arrays Are Same.";
+
+
+// 29.FIND COUNT OF POSITIVE AND NEGATIVE NUMBERS IN AN ARRAY.
+
+// int arr[]={0,-10,1,-1,-3};
+
+// int positive=0;
+// int negative =0;
+// for(int i=0; i<5; i++){
+//   if(arr[i]< 0){
+//     negative++;
+//   }
+//   else if(arr[i]>0){
+//     positive++;
+//   }
+// }
+
+// cout<<"There are "<<positive<<"  Positive"<<" ";
+// cout<<" And "<<negative<<" Negative Numbers are in array."<<endl;
+
+
+
+// 30.
+
+// #include <iostream>
+// #include <vector>
+
+// int main() {
+//     // Initialize the array
+//     std::vector<int> arr = {1, 2, 3, 4, 5};
+//     int n = arr.size();
+    
+//     // User input for direction and positions
+//     std::string direction;
+//     int positions;
+
+//     std::cout << "Enter direction to shift (left/right): ";
+//     std::cin >> direction;
+//     std::cout << "Enter number of positions to shift: ";
+//     std::cin >> positions;
+
+//     // Normalize positions
+//     positions = positions % n;
+
+//     // Display original array
+//     std::cout << "Original array: ";
+//     for (int i = 0; i < n; i++) {
+//         std::cout << arr[i] << " ";
+//     }
+//     std::cout << std::endl;
+
+//     // Shift the array based on the direction
+//     if (direction == "left") {
+//         // Shift left
+//         for (int i = 0; i < n; i++) {
+//             std::cout << arr[(i + positions) % n] << " ";
+//         }
+//     } else if (direction == "right") {
+//         // Shift right
+//         for (int i = 0; i < n; i++) {
+//             std::cout << arr[(i - positions + n) % n] << " ";
+//         }
+//     } else {
+//         std::cout << "Invalid direction! Please use 'left' or 'right'." << std::endl;
+//     }
+
+//     std::cout << std::endl;
+
+//     return 0;
+// }
 }

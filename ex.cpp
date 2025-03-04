@@ -15,4 +15,165 @@ int main() {
     // return 0;
 
 
+//     int arr[]={1,2,1,2,3,4};
+
+//     for(int i=0; i<6; i++){
+//         for(int j=i+1; j<6; j++){
+//             if(arr[j]==arr[i]){
+//                 arr[j]=-1;
+//             }
+// }        
+//     }
+
+//     for(int i=0; i<6; i++){
+//         if(arr[i]!=-1){
+//             cout<<arr[i]<<" ";
+//         }
+//     }
+
+
+
+// int arr[] ={1,1,1,2,2,3,4,5};
+
+// for(int i=0; i<8; i++){
+//     if(arr[i]!=-1){
+//         int count=1;
+//         for(int j=i+1; j<8; j++){
+//             if(arr[j]==arr[i]){
+//                 arr[j]=-1;
+//                 count++;
+//             }
+//         }
+//         cout<<arr[i]<<" = "<<count<<endl;
+//     }
+// }
+
+
+// int arr[]={1,2,3,4,5};
+// int k;
+// cin>>k;
+    
+// for(int i=0; i<k; i++){
+//     for(int j=i+1; j<5; j++){
+//         if(arr[j]>arr[i]){
+//             int temp = arr[i];
+//             arr[i]=arr[j];
+//             arr[j]=temp;
+//         }
+//     }
+// }
+// cout<<arr[k-1];
+
+
+
+// int arr[]={1,2,2,0,0,1,0,3,4};
+
+// int j=0; 
+// for(int i=0; i<9; i++){
+//     if(arr[i]!=0){
+//         int temp = arr[i];
+//         arr[i]= arr[j];
+//         arr[j]=temp;
+//         j++;
+//     }
+// }
+// for(int i=0; i<9; i++){
+//     cout<<arr[i]<<" ";
+// }
+
+
+// int arr[]={1,4,10,12,20};
+
+// for(int i=0; i<5; i++){
+//     if(arr[i+1] - arr[i] >1){
+//         for(int j=arr[i]+1; j<arr[i+1]; j++){
+//             cout<<j<<" ";
+//         }
+//         cout<<endl;
+//     }
+// }
+
+
+// int arr[]={1,2,3,45,4};
+// int max= arr[0];
+
+// for(int i=1; i<5; i++){
+//     if(arr[i]>max){
+//         max= arr[i];
+//     }
+// }
+// cout<<max;
+
+// int arr[]={1,2,3,4};
+// int sum=0; 
+// for(int i=0; i<4;i++){
+//     sum+=arr[i];
+// }
+// cout<<sum;
+
+// int arr[]={1,2,3,4};
+// int k;
+// cin>>k;
+//  for(int i=0; i<k; i++){
+//     for(int j=i+1; j<4; j++){
+//         if(arr[j]>arr[i]){
+//             int temp= arr[i];
+//             arr[i]=arr[j];
+//             arr[j]=temp;
+//         }
+//     }
+//  }
+//  cout<<arr[k-1];
+
+// int arr[]={1,2,1,3,1,4};
+
+// for(int i=0; i<6; i++){
+//     for(int j=i+1; j<6; j++){
+//    if(arr[j]==arr[i]){
+//     arr[j]=-1;
+//    }
+//    }
+// }
+
+// for(int i=0; i<6; i++){
+//     if(arr[i]!=-1){
+//         cout<<arr[i]<<" ";
+//     }
+// }
+
+
+// int arr[]={1,0,2,3,0,2};
+// int j=0;
+// for(int i=0; i<6; i++){
+//     if(arr[i]!=0){
+//         int temp =arr[i];
+//         arr[i]=arr[j];
+//         arr[j]=temp;
+//         j++;
+//     }
+// }
+// for(int i=0; i<6; i++){
+//     cout<<arr[i]<<" ";
+// }
+
+
+// int arr[]={1,1,2,2,3,4};
+// for(int i=0; i<6; i++){
+//     if(arr[i]!=-1){
+//         int count=1;
+//         for(int j=i+1; j<6; j++){
+//             if(arr[j]==arr[i]){
+//                 arr[j]=-1;
+//                 count++;
+//             }
+//         }
+//         cout<<arr[i]<<" = "<<count<<endl;
+//     }
+// }
+
+
+
+
+
+
 }
