@@ -180,3 +180,27 @@ using namespace std;
 
 
 
+// 11. CHECK PRIME NUMBER.(RETURN-TYPE WITH PARAMETERS)
+
+string prime(int num){
+int count;
+    for(int i=1; i<=num; i++){
+        if(num%i==0){
+            count++;
+        }
+    }
+    if(count==2){
+        return "prime";
+    }
+    else{
+        return "not prime";
+    }
+}
+
+
+int main(){
+    cout<<prime(7);
+}
+
+// 12.  
+
