@@ -182,25 +182,118 @@ using namespace std;
 
 // 11. CHECK PRIME NUMBER.(RETURN-TYPE WITH PARAMETERS)
 
-string prime(int num){
-int count;
-    for(int i=1; i<=num; i++){
+// string prime(int num){
+// int count;
+//     for(int i=1; i<=num; i++){
+//         if(num%i==0){
+//             count++;
+//         }
+//     }
+//     if(count==2){
+//         return "prime";
+//     }
+//     else{
+//         return "not prime";
+//     }
+// }
+
+
+// int main(){
+//     cout<<prime(7);
+// }
+
+// 12.  ARRANGE THE ARRAY IN SORTED ORDER.(NON-RETURN TYPE WITH PARAMETERS)
+
+// void sorted(int arr[],int n){
+
+
+//     for(int i=0; i<n; i++){
+//         for(int j=i+1; j<n; j++){
+//             if(arr[j]<arr[i]){
+//                 int temp= arr[i];
+//                 arr[i]=arr[j];
+//                 arr[j]=temp;
+//             }
+//         }
+//     }
+
+//     for(int i=0; i<n; i++){
+//         cout<<arr[i]<<" ";
+//     }
+// }
+
+// int main(){
+//     int arr[]={3,5,2,49,38,8};
+
+//     sorted(arr,6);
+// }
+
+
+
+// 13. ROTATE THE ARRAY K TIMES.(NON-RETURN TYPE WITH PARAMETERS)
+
+
+
+// void rotate(int arr[], int n, int s, int e) {
+//     while (s < e) {
+//         swap(arr[s], arr[e]);
+//         s++;
+//         e--;
+//     }
+// }
+
+// void rotateArray(int arr[], int n, int k) {
+//     // Handle cases where k is greater than n
+//     k = k % n;
+//     if (k < 0) {
+//         k += n; // Handle negative rotations
+//     }
+
+//     // Step 1: Reverse the entire array
+//     rotate(arr, n, 0, n - 1);
+//     // Step 2: Reverse the first k elements
+//     rotate(arr, n, 0, k - 1);
+//     // Step 3: Reverse the remaining n-k elements
+//     rotate(arr, n, k, n - 1);
+// }
+
+// int main() {
+//     int arr[5] = {1, 2, 3, 4, 5};
+//     int k; 
+//     cin >> k;
+
+//     rotateArray(arr, 5, k);
+    
+//     for (int i = 0; i < 5; i++) {
+//         cout << arr[i] << " ";
+//     }
+// }
+
+
+
+//14. CHECK PRIME NUMBER IN 0(ROOT OF N) TIME COMPLEXITY. (RETURN-TYPE WITH PARAMETERS)
+
+int  Isprime(int num){
+    if(num<=1){
+        cout<<"False";
+        return 0;
+     }
+
+     for(int i=2; i*i<num; i++){
         if(num%i==0){
-            count++;
+            cout<<"False";
+            return 0;
         }
-    }
-    if(count==2){
-        return "prime";
-    }
-    else{
-        return "not prime";
-    }
+     }
+    
+        cout<<"True";
+  
 }
 
 
 int main(){
-    cout<<prime(7);
+    int num;
+     cin>>num;
+
+   Isprime(num);
 }
-
-// 12.  
-
