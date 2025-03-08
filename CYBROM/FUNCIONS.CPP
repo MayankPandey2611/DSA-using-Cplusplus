@@ -273,27 +273,67 @@ using namespace std;
 
 //14. CHECK PRIME NUMBER IN 0(ROOT OF N) TIME COMPLEXITY. (RETURN-TYPE WITH PARAMETERS)
 
-int  Isprime(int num){
-    if(num<=1){
-        cout<<"False";
-        return 0;
-     }
+// int  Isprime(int num){
+//     if(num<=1){
+//         cout<<"False";
+//         return 0;
+//      }
 
-     for(int i=2; i*i<num; i++){
-        if(num%i==0){
-            cout<<"False";
-            return 0;
-        }
-     }
+//      for(int i=2; i*i<num; i++){
+//         if(num%i==0){
+//             cout<<"False";
+//             return 0;
+//         }
+//      }
     
-        cout<<"True";
+//         cout<<"True";
   
+// }
+
+
+// int main(){
+//     int num;
+//      cin>>num;
+
+//    Isprime(num);
+// }
+
+
+
+// 15. SUM OF ALL PRIME NUMBERS FROM AN ARRAY.
+
+bool isprime(int num){
+    if(num<=1){
+      
+        return false;
+    }
+
+    for(int i=2; i*i<=num; i++){
+        if(num%i==0){
+            return false;
+        }
+    }
+
+  return true;
 }
 
-
 int main(){
-    int num;
-     cin>>num;
+    int n;
+    cin>>n;
 
-   Isprime(num);
+    int arr[n];
+
+    for(int i=0; i<n; i++){
+        cin>>arr[i];
+    }
+int sum=0;
+
+
+for(int i=0; i<n; i++){
+    if(isprime(arr[i])){
+        sum+=arr[i];
+    }
+}
+
+cout<<sum;
 }
