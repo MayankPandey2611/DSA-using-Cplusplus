@@ -302,38 +302,68 @@ using namespace std;
 
 // 15. SUM OF ALL PRIME NUMBERS FROM AN ARRAY.
 
-bool isprime(int num){
-    if(num<=1){
+// bool isprime(int num){
+//     if(num<=1){
       
-        return false;
-    }
+//         return false;
+//     }
 
-    for(int i=2; i*i<=num; i++){
-        if(num%i==0){
-            return false;
+//     for(int i=2; i*i<=num; i++){
+//         if(num%i==0){
+//             return false;
+//         }
+//     }
+
+//   return true;
+// }
+
+// int main(){
+//     int n;
+//     cin>>n;
+
+//     int arr[n];
+
+//     for(int i=0; i<n; i++){
+//         cin>>arr[i];
+//     }
+// int sum=0;
+
+
+// for(int i=0; i<n; i++){
+//     if(isprime(arr[i])){
+//         sum+=arr[i];
+//     }
+// }
+
+// cout<<sum;
+// }
+
+
+// 16. SORT AN ARRAY USING SWAP/FUNTION.
+
+void sortarray(int arr[],int size){
+    for(int i=0; i<size-1; i++){
+        for(int j=0; j<size-i-1; j++){
+            if(arr[j]>arr[j+1]){
+                int temp= arr[j];
+                arr[j]=arr[j+1];
+                arr[j+1]=temp;
+            }
         }
     }
+   }
 
-  return true;
+void showarray(int arr[], int size){
+    for(int i=0; i<size; i++){
+        cout<<arr[i]<<" ";
+    }
 }
+
 
 int main(){
-    int n;
-    cin>>n;
+    int arr[]={14,2,3,1,5};
 
-    int arr[n];
+sortarray(arr,sizeof(arr)/sizeof(arr[0]));
+showarray(arr,sizeof(arr)/sizeof(arr[0]));
 
-    for(int i=0; i<n; i++){
-        cin>>arr[i];
-    }
-int sum=0;
-
-
-for(int i=0; i<n; i++){
-    if(isprime(arr[i])){
-        sum+=arr[i];
-    }
-}
-
-cout<<sum;
 }

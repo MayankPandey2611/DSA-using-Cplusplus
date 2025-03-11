@@ -172,7 +172,31 @@ int main() {
 // }
 
 
+string s1="NITIN";
+string s2="NITIN";
 
+if(s1.length()!=s2.length()){
+    cout<<"Not an Anagram.";
+    return 0;
+}
+
+for(int i=0; i<s1.length(); i++){
+  
+    for(int j=0; j<s2.length(); j++){
+        if(s2[j]==s1[i]){
+            s1[i]=='#';
+           break;
+        }
+    }
+   
+}
+
+for(int i=0; i<s1.length(); i++){
+    if(s1[i]=='#'){
+        cout<<"Anagram";
+        return 0;
+    }
+}
 
 
 

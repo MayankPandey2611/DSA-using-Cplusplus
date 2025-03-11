@@ -196,9 +196,9 @@ int main()
 
 //QUES 5. CHECK ANAGRAM..
 
-string s1="mam";
 
-string s2 = "mam";
+string s1="NITIN";
+string s2="NITIN";
 
 if(s1.length()!=s2.length()){
     cout<<"Not an Anagram.";
@@ -211,16 +211,19 @@ for(int i=0; i<s1.length(); i++){
         if(s2[j]==s1[i]){
             s1[i]=='#';
             check = true;
-
         }
     }
-
     if(check==false){
         cout<<"Not an Anagram.";
         return 0;
     }
 }
-
 cout<<"Anagram.";
+
+
+
+
+//  QUES 6.  
+
 
 }
