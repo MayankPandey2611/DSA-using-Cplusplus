@@ -10,24 +10,24 @@ using namespace std;
 
 //EXAMPLE=> CALL BY VALUE.
 
-int main(){
-int a=10;
-int *ptr=&a;
+// int main(){
+// int a=10;
+// int *ptr=&a;
 
-cout<<ptr;   //IT PRINTS ADDRESS OF THE VARIABLE.
-cout<<endl;
-cout<<&a;   //IT PRINTS ADDRESS OF THE VARIABLE.
-cout<<endl;
+// cout<<ptr;   //IT PRINTS ADDRESS OF THE VARIABLE.
+// cout<<endl;
+// cout<<&a;   //IT PRINTS ADDRESS OF THE VARIABLE.
+// cout<<endl;
 
-cout<<*ptr;  //IT PRINTS THE VALUE OF  VARIABLE.
-cout<<endl;
-cout<<&ptr;   //IT PRINTS THE ADDRESS OF THE POINTER.
-cout<<endl;
-
-
+// cout<<*ptr;  //IT PRINTS THE VALUE OF  VARIABLE.
+// cout<<endl;
+// cout<<&ptr;   //IT PRINTS THE ADDRESS OF THE POINTER.
+// cout<<endl;
 
 
-}
+
+
+// }
 
 
 
@@ -76,6 +76,37 @@ cout<<endl;
 //     cout<<sum()<<endl;
 //     cout<<sum(5)<<endl;
 //     cout<<sum(1,8);
+
+// }
+
+
+
+// 5.CREATE FUNCTION TO SWAP TWO NUMBERS USING CALL BY VALUE AND CALL BY REFERENCE.
+
+// void swapbyvalue(int num1, int num2){
+
+//  int temp= num1;
+//  num1=num2;
+//  num2=temp;
+
+//  cout<<num1<<","<<num2;
+
+// }
+
+// void swapbyreference(int &a, int &b){
+//     int temp= a;
+//     a=b;
+//     b=temp;
+//     cout<<a<<","<<b;
+// }
+
+// int main(){
+//     int a=3;
+//     int b=4;
+//     // cin>>a>>b;
+//    swapbyvalue(a,b);
+//    cout<<endl;
+//    swapbyreference(a,b);
 
 // }
 

@@ -300,7 +300,7 @@ using namespace std;
 
 
 
-// 15. SUM OF ALL PRIME NUMBERS FROM AN ARRAY.
+// 15. SUM OF ALL PRIME NUMBERS FROM AN ARRAY. (RETURN-TYPE WITH PARAMETERS)
 
 // bool isprime(int num){
 //     if(num<=1){
@@ -339,31 +339,83 @@ using namespace std;
 // }
 
 
-// 16. SORT AN ARRAY USING SWAP/FUNTION.
+// 16. SORT AN ARRAY USING SWAP FUNCTION. (NON-RETURN TYPE WITH PARAMETERS)
 
-void sortarray(int arr[],int size){
-    for(int i=0; i<size-1; i++){
-        for(int j=0; j<size-i-1; j++){
-            if(arr[j]>arr[j+1]){
-                int temp= arr[j];
-                arr[j]=arr[j+1];
-                arr[j+1]=temp;
-            }
-        }
-    }
-   }
+// void sortarray(int arr[],int size){
+//     for(int i=0; i<size; i++){
+//         for(int j=i+1; j<size; j++){
+//             if(arr[i]>arr[j]){
+//                swap(arr[i],arr[j]);
+//             }
+//         }
+//     }
+//    }
 
-void showarray(int arr[], int size){
-    for(int i=0; i<size; i++){
-        cout<<arr[i]<<" ";
-    }
+// void showarray(int arr[], int size){
+//     for(int i=0; i<size; i++){
+//         cout<<arr[i]<<" ";
+//     }
+// }
+
+
+// int main(){
+//     int arr[]={14,2,3,1,5,5,4,2,213,4,0};
+
+// sortarray(arr,sizeof(arr)/sizeof(arr[0]));
+// showarray(arr,sizeof(arr)/sizeof(arr[0]));
+
+
+// }
+
+
+// 17. MAXIMUM OF THREE NUMBERS.  (RETURN-TYPE WITH PARAMETERS)
+
+// int max(int a,int b, int c){
+//     if(a>=b && a>=c){
+//         return a;
+//     }
+
+//     else if(b>a && b>c){
+//         return b;
+//     }
+
+//     else{
+//         return c;
+//     }
+// }
+
+// int main(){
+//     int a,b,c;
+//     cin>>a>>b>>c;
+
+//   cout<<"Max numbers is : "<<max(a,b,c);
+// }
+
+
+
+// 18. CALCULATE AREA OF RECTANGLE, CIRCLE AND TRIANGLE. (RETURN-TYPE WITH PARAMETERS)
+// (RECURSION APPROACH.)
+
+int rectangle(int l, int b){
+    return l*b;
 }
 
+float circle(int r){
+    return 3.14*r*r;
+}
+
+float triangle(int l,int b){
+    return 0.5*rectangle(l,b);
+}
 
 int main(){
-    int arr[]={14,2,3,1,5};
-
-sortarray(arr,sizeof(arr)/sizeof(arr[0]));
-showarray(arr,sizeof(arr)/sizeof(arr[0]));
-
+    int l,b,r;
+    cin>>l>>b>>r;
+     
+    cout<<rectangle(l,b)<<endl;
+    cout<<circle(r)<<endl;
+    cout<<triangle(l,b);
 }
+
+
+// 19. 

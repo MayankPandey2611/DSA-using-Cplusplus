@@ -20,7 +20,7 @@ int main()
     //     cout<<s.at(i);
     // }
 
-    //QUES 1. REVERSE A STRING .
+    // QUES 1. REVERSE A STRING .
 
     // string s="Mayank";
     // int i=0;
@@ -38,7 +38,7 @@ int main()
     //         cout<<s.at(i);
     //     }
 
-    //QUES 2.   CHECK PALINDROME FOR A STRING.
+    // QUES 2.   CHECK PALINDROME FOR A STRING.
 
     // string  s = "mayank";
 
@@ -125,8 +125,7 @@ int main()
 
     // cout<<s;
 
-
-//QUES 3. CHECK VALID PARENTHESES..
+    // QUES 3. CHECK VALID PARENTHESES..
 
     // string s = "}{";
 
@@ -174,8 +173,7 @@ int main()
     //     cout << "invalid";
     // }
 
-
-//QUES 4. CONVERTION OF SMALL CHARACTERS INTO BIGGER CHARACTER.
+    // QUES 4. CONVERTION OF SMALL CHARACTERS INTO BIGGER CHARACTER.
 
     // string s= "AbCd";
 
@@ -188,42 +186,115 @@ int main()
     //         s[i]= int (s[i])-32;
     //     }
     // }
- 
+
     // cout<<s;
+
+    // QUES 5. CHECK ANAGRAM..
+
+    // string s1="NITIN";
+    // string s2="NITIN";
+
+    // if(s1.length()!=s2.length()){
+    //     cout<<"Not an Anagram.";
+    //     return 0;
+    // }
+
+    // for(int i=0; i<s1.length(); i++){
+    //     bool check = false;
+    //     for(int j=0; j<s2.length(); j++){
+    //         if(s2[j]==s1[i]){
+    //             s1[i]=='#';
+    //             check = true;
+    //         }
+    //     }
+    //     if(check==false){
+    //         cout<<"Not an Anagram.";
+    //         return 0;
+    //     }
+    // }
+    // cout<<"Anagram.";
+
+    //  QUES 6.  COUNT NUMBERS OF VOWELS AND CONSTANTS IN A STRING.
+
+    // string s= "vowels";
+
+    // int countvowels=0;
+    // int countconstants=0;
+
+    // for(int i=0; i<s.length(); i++){
+    //     if(s[i]=='a' || s[i]=='e' || s[i]=='i' || s[i]=='o' || s[i]=='u'){
+    //         countvowels++;
+    //     }
+    //     else{
+    //         countconstants++;
+    //     }
+    // }
+    // cout<<"Number of vowels are: "<<countvowels<<endl;
+    // cout<<"Number of Constants are: "<<countconstants;
+
+    //  QUES 7. CONCATENATE TWO STRINGS..
+
+    // string s1="Hello";
+    // string s2=" Everyone";
+
+    // // METHOD 1.
+    // //   cout<<s1.append(s2);
+
+    // //   METHOD 2.
+
+    // string s =s1+s2;
+    // cout<<s;
+
+    //  QUES 8.  COUNT THE FREQUENCY OF THE CHARACTERS IN A STRING..
+
+    // string s = "sdhkfskdfjls";
+
+    // for (int i = 0; i < s.length(); i++)
+    // {
+    //     int count = 1;
+    //     if (s[i] != '#')
+    //     {
+    //         for (int j = i + 1; j < s.length(); j++)
+    //         {
+    //             if (s[j] == s[i])
+    //             {
+    //                 count++;
+    //                 s[j] = '#';
+    //             }
+    //         }
+
+    //         cout << s[i] << "=" << count << endl;
+    //     }
+    // }
+
+
+
+    // QUES 9. COMPARE TWO STRINGS..
+    
+    // string s1="hello";
+    // string s2="cbcak";
+
+
+    // if(s1.length()!=s2.length()){
+    //     cout<<"Not Same.";
+    //     return 0;
+    // }
+
+    // for(int i=0; i<s1.length(); i++){
+    //         if(s2[i]!=s1[i]){
+    //             cout<<"Not Same";
+    //             return 0;
+    //         }
+    //     }
+    //        cout<< "Same";
+
+
+
+    // QUES 10. REVERSE THE ORDER OF WORDS IN A STRING..
 
 
     
 
-//QUES 5. CHECK ANAGRAM..
-
-
-string s1="NITIN";
-string s2="NITIN";
-
-if(s1.length()!=s2.length()){
-    cout<<"Not an Anagram.";
-    return 0;
-}
-
-for(int i=0; i<s1.length(); i++){
-    bool check = false;
-    for(int j=0; j<s2.length(); j++){
-        if(s2[j]==s1[i]){
-            s1[i]=='#';
-            check = true;
-        }
     }
-    if(check==false){
-        cout<<"Not an Anagram.";
-        return 0;
-    }
-}
-cout<<"Anagram.";
+   
 
-
-
-
-//  QUES 6.  
-
-
-}
