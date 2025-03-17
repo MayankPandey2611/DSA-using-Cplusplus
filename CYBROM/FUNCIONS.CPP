@@ -396,26 +396,26 @@ using namespace std;
 // 18. CALCULATE AREA OF RECTANGLE, CIRCLE AND TRIANGLE. (RETURN-TYPE WITH PARAMETERS)
 // (RECURSION APPROACH.)
 
-int rectangle(int l, int b){
-    return l*b;
-}
+// int rectangle(int l, int b){
+//     return l*b;
+// }
 
-float circle(int r){
-    return 3.14*r*r;
-}
+// float circle(int r){
+//     return 3.14*r*r;
+// }
 
-float triangle(int l,int b){
-    return 0.5*rectangle(l,b);
-}
+// float triangle(int l,int b){
+//     return 0.5*rectangle(l,b);
+// }
 
-int main(){
-    int l,b,r;
-    cin>>l>>b>>r;
+// int main(){
+//     int l,b,r;
+//     cin>>l>>b>>r;
      
-    cout<<rectangle(l,b)<<endl;
-    cout<<circle(r)<<endl;
-    cout<<triangle(l,b);
-}
+//     cout<<rectangle(l,b)<<endl;
+//     cout<<circle(r)<<endl;
+//     cout<<triangle(l,b);
+// }
 
 
 // 19. 

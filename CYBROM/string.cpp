@@ -214,6 +214,8 @@ int main()
     // }
     // cout<<"Anagram.";
 
+
+
     //  QUES 6.  COUNT NUMBERS OF VOWELS AND CONSTANTS IN A STRING.
 
     // string s= "vowels";
@@ -232,6 +234,9 @@ int main()
     // cout<<"Number of vowels are: "<<countvowels<<endl;
     // cout<<"Number of Constants are: "<<countconstants;
 
+
+
+
     //  QUES 7. CONCATENATE TWO STRINGS..
 
     // string s1="Hello";
@@ -245,6 +250,8 @@ int main()
     // string s =s1+s2;
     // cout<<s;
 
+
+    
     //  QUES 8.  COUNT THE FREQUENCY OF THE CHARACTERS IN A STRING..
 
     // string s = "sdhkfskdfjls";
