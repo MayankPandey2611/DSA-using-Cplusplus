@@ -230,20 +230,22 @@ for(int i=0; i<s1.length(); i++){
 
 
 
-int arr[]={1,0,1,0,1,1,0,1,0,1,0,0,1};
-int size=sizeof(arr)/sizeof(arr[0]);
-int j=arr[1];
-for(int i=0; i<size; i++){
+// int arr[]={1,0,1,0,1,1,0,1,0,1,0,0,1};
+// int size=sizeof(arr)/sizeof(arr[0]);
+// int j=arr[1];
+// for(int i=0; i<size; i++){
     
-    if(arr[i]!=1){
-        int temp=arr[i];
-        arr[i]=arr[j];
-        arr[j]=temp;
-        j++;
-    }
-}
+//     if(arr[i]!=1){
+//         int temp=arr[i];
+//         arr[i]=arr[j];
+//         arr[j]=temp;
+//         j++;
+//     }
+// }
 
-for(int i=0; i<size; i++){
-    cout<<arr[i]<<" ";
-}
+// for(int i=0; i<size; i++){
+//     cout<<arr[i]<<" ";
+// }
+
+string s[5];
 }
