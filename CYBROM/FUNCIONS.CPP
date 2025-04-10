@@ -418,4 +418,28 @@ using namespace std;
 // }
 
 
-// 19. 
+// 19. REMOVE DUPLICATES ELEMENTS IN O(n) TIME COMPLEXITY..
+
+int RemoveDuplicate(int *arr, int n){
+    int i=0;
+    for(int j=i+1; j<n; j++){
+        if(arr[i]!=arr[j]){
+            i++;
+            swap(arr[i],arr[j]);
+        }
+    }
+    return i;
+}
+
+
+int main(){
+    int arr[]={1,1,2,3,3,4,5,6,6,7};
+
+    int size = sizeof(arr)/sizeof(arr[0]);
+
+    int ans = RemoveDuplicate(arr,size);
+
+    for(int i=0; i<=ans; i++){
+        cout<<arr[i]<<" ";
+    }
+}

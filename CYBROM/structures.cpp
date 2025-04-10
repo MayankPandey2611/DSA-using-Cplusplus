@@ -50,46 +50,76 @@ using namespace std;
    //#  POINTER TYPE VARIABLES...(POINTER TO STRUCTURE)
 
 
-        struct structures
-        {
+//         struct structures
+//         {
 
             
-            int age;
+//             int age;
             
-            private:
-            string name;
+//             private:
+//             string name;
 
-            public:
-            void  myname(string x){
-                name=x;
-            }
-            void show(){
-                cout<<age<<" "<<name<<endl;
-            }
-        };
+//             public:
+//             void  myname(string x){
+//                 name=x;
+//             }
+//             void show(){
+//                 cout<<age<<" "<<name<<endl;
+//             }
+//         };
         
    
-   int main(){
+//    int main(){
 
-    structures s;
-    s.age=12;
-    s.myname("Mayank");
+//     structures s;
+//     s.age=12;
+//     s.myname("Mayank");
 
-    s.show();
-    structures a;
-    a.age=10;
-    a.myname("om");
-    a.show();
+//     s.show();
+//     structures a;
+//     a.age=10;
+//     a.myname("om");
+//     a.show();
 
-    structures *p;
-    p=&a;
-    p->age=13;
-    a.myname("ayush");
-    p->show();
-    a.show();
+//     structures *p;
+//     p=&a;
+//     p->age=13;
+//     a.myname("ayush");
+//     p->show();
+//     a.show();
 
-    p=&s;
-    p->myname("anil");
-    s.show();
+//     p=&s;
+//     p->myname("anil");
+//     s.show();
 
-   }
+//    }
+
+
+
+  //  SELF RECURSIVE FUNCTIONS/POINTER..
+  
+  struct demo {
+    
+    int rollno;
+    string name;
+
+    demo *link;
+
+  };
+
+  int main(){
+
+    demo a;
+    a.rollno=101;
+   a.name="Mayank";
+    a.link=NULL;
+
+   demo b;
+
+   b.rollno=102;
+   b.name="hello";
+   b.link=&a;
+  cout<<b.link->rollno;
+
+    
+  }
