@@ -66,3 +66,13 @@ int main(){
     }
 
 }
+
+
+
+// ---------------------------INTERVIEW QUESTIONS 
+
+// 1. STABLE => NO  IT IS NOT STABLE.
+// 2. INPLACE => NO IT IS NOT INPLACE.
+// 3. TIME COMPLEXITY => 
+// 4. SPACE COMPLEXITY => 
+// 5. OPTIMIZED => 
