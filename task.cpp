@@ -54,20 +54,73 @@ using namespace std;
 
 // QUES 3. 
 
-void findyear(int year){
+// void findyear(int year){
 
-    if(year%4==0 && year%100!=0 || year%400==0){
-        cout<<"Leap year.";
-    }
-    else{
-        cout<<"Not a leap year.";
-    }
+//     if(year%4==0 && year%100!=0 || year%400==0){
+//         cout<<"Leap year.";
+//     }
+//     else{
+//         cout<<"Not a leap year.";
+//     }
     
-}
+// }
+
+// int main(){
+
+//     int year;
+//     cin>>year;
+//     findyear(year);
+// }
+
+
+// BUBBLE SORT 
+
+
+// void bubble(int arr[] , int n){
+
+
+//     for(int i=0; i<n; i++){
+//         for(int j=0; j<n-i-1; j++){
+//             if(arr[j] > arr[j+1]){
+//                 int tmp = arr[j];
+//                 arr[j] =arr[j+1];
+//                 arr[j+1]=tmp;
+//             }
+//         }
+//     }
+// }
+
+// int main(){
+
+//     int arr[]={3,1,2,4,5,10,1};
+//     int n = sizeof(arr) / sizeof(arr[0]);
+
+//     bubble(arr , n);
+
+//     for (int i=0; i<n; i++){
+//         cout<<arr[i]<<" ";
+//     }
+// }
+
+
+// INSERTION SORT 
 
 int main(){
 
-    int year;
-    cin>>year;
-    findyear(year);
+    int arr[]={2,1,4,3,6,5};
+
+    int n = sizeof(arr)/sizeof(arr[0]);
+
+    for (int i =1; i<n; i++){
+        int j=i;
+
+        while( j >0 &&  arr[j] < arr[j-1]){
+            swap(arr[j] , arr[j-1]);
+            j--;
+        } 
+    }
+
+for(int i=0; i<n; i++){
+    cout<<arr[i]<<" ";
+}
 }

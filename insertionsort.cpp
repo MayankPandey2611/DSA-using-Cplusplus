@@ -1,24 +1,31 @@
 #include<iostream>
 using namespace std;
 
-int main(){
 
-    int arr[] = {1,2,3,4};
-int count=0;
-    int size = sizeof(arr)/sizeof(arr[0]);
-    for(int i =1; i<size; i++){
+void insert(int arr[], int size ){
+    int count=0;
 
-        int j= i;
+ for(int i =1; i<size; i++){
+
+        int j = i;
 
         while( j>0 && arr[j]<arr[j-1] ){
             int temp = arr[j];
             arr[j]=arr[j-1];
-            arr[j-1] = arr[j];
+            arr[j-1] = temp;
             j--;
             count++;
         }
     }
+
 cout<<count<<endl;
+}
+int main(){
+
+    int arr[] = {4,87,9,2};
+    int size = sizeof(arr)/sizeof(arr[0]);
+   
+insert(arr,size);
 // PRINTING ARRAY.
     for(int i=0; i<size; i++){
         cout<<arr[i]<<" ";
