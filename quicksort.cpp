@@ -61,8 +61,9 @@ int main(){
 
 // ---------------------------INTERVIEW QUESTIONS 
 
-// 1. STABLE => 
-// 2. INPLACE => 
-// 3. TIME COMPLEXITY => 
-// 4. SPACE COMPLEXITY => 
-// 5. OPTIMIZED => 
+// 1. STABLE => NO 
+// 2. INPLACE => YES
+// 3. TIME COMPLEXITY => O(n^2)
+// 4. SPACE COMPLEXITY => O(logn)
+// 5. OPTIMIZED => CANT BE OPTIMIZED.
+// 6. APPROACH => DIVIDE AND CONQUER.
