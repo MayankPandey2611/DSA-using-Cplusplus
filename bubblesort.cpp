@@ -61,3 +61,12 @@ else if(size<=2){
 
 }
 
+
+
+// ---------------------------INTERVIEW QUESTIONS 
+
+// 1. STABLE =>
+// 2. INPLACE =>
+// 3. TIME COMPLEXITY => 
+// 4. SPACE COMPLEXITY => 
+// 5. OPTIMIZED => 
