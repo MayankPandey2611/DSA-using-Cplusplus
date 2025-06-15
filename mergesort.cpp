@@ -71,8 +71,8 @@ int main(){
 
 // ---------------------------INTERVIEW QUESTIONS 
 
-// 1. STABLE => NO  IT IS NOT STABLE.
+// 1. STABLE =>Yes, it is stable
 // 2. INPLACE => NO IT IS NOT INPLACE.
-// 3. TIME COMPLEXITY => 
-// 4. SPACE COMPLEXITY => 
-// 5. OPTIMIZED => 
+// 3. TIME COMPLEXITY => O(n log n)
+// 4. SPACE COMPLEXITY => O(n)
+// 5. OPTIMIZED => yes

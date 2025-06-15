@@ -65,8 +65,8 @@ else if(size<=2){
 
 // ---------------------------INTERVIEW QUESTIONS 
 
-// 1. STABLE =>
-// 2. INPLACE =>
-// 3. TIME COMPLEXITY => 
-// 4. SPACE COMPLEXITY => 
-// 5. OPTIMIZED => 
+// 1. STABLE =>  Yes, it is stable. 
+// 2. INPLACE => Yes, it is in-place.
+// 3. TIME COMPLEXITY => O(n²)
+// 4. SPACE COMPLEXITY => O(1)
+// 5. OPTIMIZED => Yes
