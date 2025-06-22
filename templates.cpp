@@ -13,6 +13,8 @@ using namespace std;
 //     sum(2.9,10.7);
 // };
 
+
+
 //  CLASS TEMPLATES 
 
 template <class obj1 >
@@ -21,11 +23,16 @@ public: obj1 v;
 
 job(obj1 val){
     v=val;
-    cout<<v;
+    cout<<v<<endl;
+}
+
+show(){
+    cout<<"hello"<<endl;
 }
 };
 
 
 int main(){
     job <int> j (21);
+    j.show();
 }
