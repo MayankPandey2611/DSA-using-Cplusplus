@@ -4,11 +4,11 @@ using namespace std;
 
 // FIRST TYPE OF INBULIT METHODS OR FUNCTIONS ARE ARRAY.
 
-#include<array>
-int main(){
-// CREATING ARRAY
-array<int , 5> arr{2,1,4,5,2};
-array<int , 5> arr1{};
+// #include<array>
+// int main(){
+// // CREATING ARRAY
+// array<int , 5> arr{2,1,4,5,2};
+// array<int , 5> arr1{};
 
 // PRINTING ARRAY USING (AT) METHOD...
 
@@ -51,10 +51,21 @@ array<int , 5> arr1{};
 
 // CHECKING IS OUR ARRAY IS EMPTY OR NOT.....
 
-if(arr1.empty()){
-    cout<<"yes";
-}
-else{
-    cout<<"no";
-}
+// if(arr1.empty()){
+//     cout<<"yes";
+// }
+// else{
+//     cout<<"no";
+// }
+
+// }
+
+
+// STRING IN STL 
+
+#include<string>
+
+
+int main(){
+    string a="";
 }
