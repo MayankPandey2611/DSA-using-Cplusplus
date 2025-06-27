@@ -1,5 +1,5 @@
 
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 // FIRST TYPE OF INBULIT METHODS OR FUNCTIONS ARE ARRAY.
@@ -16,17 +16,14 @@ using namespace std;
 //     cout<<arr.at(i)<<" ";
 // }
 
-
 // PRINTIG ARRAY USING (SIZE) METHOD....
 // for(int i=0; i<arr.size();i++){
 //     cout<<arr[i]<<" ";
 // }
 
-
 // GGETTING ARRAYS FIRST AND LAST VALUE USING (FRONT) AND (BACK) METHOD.....
 // cout<<arr.front()<<endl;
 // cout<<arr.back()<<endl;
-
 
 // SWAPPING VALUES OF TWO ARRAYS USING (SWAP) METHOD.....
 
@@ -39,15 +36,12 @@ using namespace std;
 //     cout<<arr1[i]<<" ";
 // }
 
-
-
 // FILLING ALL THE VALUES OF ARRAY USING (FILL) METHOD....
 
 // arr1.fill(100);
 // for(int i=0; i<arr1.size();i++){
 //     cout<<arr1[i]<<" ";
 // }
-
 
 // CHECKING IS OUR ARRAY IS EMPTY OR NOT.....
 
@@ -60,12 +54,47 @@ using namespace std;
 
 // }
 
+// STRING IN STL
 
-// STRING IN STL 
+#include <string>
+#include<algorithm>
+int main()
+{
+    string a;
+    // cout<<sizeof(a);
 
-#include<string>
+    // getline(cin, a);
+    // cout << a;
+
+    string s ="8755906345";
+    // sort(s.begin(),s.end(),greater<int>());
+    // sort(s.begin(),s.end(),less<int>());
+    // cout<<s;
+
+    // cout<<s.size();
+    // s.resize(5);
+    // cout<<s.size();
 
 
-int main(){
-    string a="";
+    string j = "hello";
+    // cout<<j.find("lo");
+
+    // cout<<j.back();
+    // cout<<j.front();
+
+    // j.append(s);
+    // cout<<j;
+
+
+    // j.insert(2,"ok");
+    // cout<<j;
+
+
+    // j.erase(2,2);
+    // cout<<j;
+
+
+    j.clear();
+    cout<<j;
+
 }
