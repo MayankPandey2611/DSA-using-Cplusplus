@@ -80,6 +80,33 @@ int main(){
 
 // 5. MAX_SIZE =>
 
-vector<int>v;
-cout<<v.max_size();
+// vector<int>v;
+// cout<<v.max_size();
+
+
+// TAKING INPUT FROM USER AND PRINTING THE VECTOR ARRAY 
+
+// vector<int>v;
+// int size , num ;
+// cin>>size;
+
+// for(int i=0; i<size; i++){
+//     cin>>num;
+//     v.push_back(num);
+// }
+
+// // PRINTING
+
+// for(auto i:v){
+//     cout<<i<<" ";
+// }
+
+
+// DIFFERENCE BETWEEN SIZE AND CAPACITY 
+
+vector<int>v(4);
+cout<<v.size()<<endl;
+v.push_back(6);
+cout<<v.capacity();
+
 }
