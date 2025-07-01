@@ -1,6 +1,7 @@
 #include<iostream>
 #include<vector>
-
+#include<iterator>
+#include<algorithm>
 using namespace std;
 
 int main(){
@@ -104,9 +105,29 @@ int main(){
 
 // DIFFERENCE BETWEEN SIZE AND CAPACITY 
 
-vector<int>v(4);
-cout<<v.size()<<endl;
-v.push_back(6);
-cout<<v.capacity();
+// vector<int>v(4);
+// cout<<v.size()<<endl;
+// v.push_back(6);
+// cout<<v.capacity();
 
+// ITERATOR IN VECTOR
+
+// vector<int>v{1,2,3,4,5};
+
+//------------INSERT METHOD
+// v.insert(v.begin()+2 , 10);
+// v.insert(v.end()-2 , 10);
+// for(auto i:v){
+//     cout<<i<<" ";
+// }
+
+//-------------ERASE METHOD
+
+// vector<int>::iterator it=v.end();
+// vector<int>::iterator it=v.begin();
+// v.erase(it-1);
+
+// for(auto i:v){
+//     cout<<i<<" ";
+// }
 }
