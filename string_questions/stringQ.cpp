@@ -65,17 +65,30 @@ int main (){
 
 // ---------------------------------------------------QUESTION 5. COUNT VOWEL IN A STRING......
 
-string str = "smile";
-string vowels = "aeiou";
-int count=0;
-for(int i=0; i<str.size(); i++){
-     if (str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u'){
-          count++;
-     }
-}
+// string str = "smile";
+// string vowels = "aeiou";
+// int count=0;
+// for(int i=0; i<str.size(); i++){
+//      if (str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u'){
+//           count++;
+//      }
+// }
 
-cout<<count;
+// cout<<count;
 
+
+
+// QUESTION 6. COUNT THE WORDS IN A STRING.....
+
+// string str = "python is good language and i learn from cybrom";
+// int count =1;
+
+// for(int i=0; i<str.size()+1; i++){
+//     if (str[i] == ' '){
+//         count++;
+//     }
+// }
+// cout<<"no. of words are: "<<count<<endl;
 
 //-------------------------------------------------QUESTION 13. WAP TO FIND MISSING NUMBER FROM VECTOR.....
 // EXAMPLE INPUT : {1,2,3,5,6}
