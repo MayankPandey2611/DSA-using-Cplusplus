@@ -78,7 +78,7 @@ int main (){
 
 
 
-// QUESTION 6. COUNT THE WORDS IN A STRING.....
+//----------------------------------------------QUESTION 6. COUNT THE WORDS IN A STRING.....
 
 // string str = "python is good language and i learn from cybrom";
 // int count =1;
@@ -90,10 +90,17 @@ int main (){
 // }
 // cout<<"no. of words are: "<<count<<endl;
 
+
+
+
+//----------------------------------------------QUESTION . 
 //-------------------------------------------------QUESTION 13. WAP TO FIND MISSING NUMBER FROM VECTOR.....
 // EXAMPLE INPUT : {1,2,3,5,6}
 // OUTPUT : {4}
 
 
 // ------------------------------------------------QUESTION 14. WAP TO REMOVE DUPLICATES VALUES FROM VECTOR......
+
+
+
 }
