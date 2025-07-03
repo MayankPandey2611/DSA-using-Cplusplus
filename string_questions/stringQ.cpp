@@ -1,6 +1,7 @@
 #include<iostream>
 #include<string>
 #include<algorithm>
+#include<vector>
 using namespace std;
 
 int main (){
@@ -93,14 +94,105 @@ int main (){
 
 
 
-//----------------------------------------------QUESTION . 
+//----------------------------------------------QUESTION 8. INSERT DASH BETWEEN TWO ODD NUMBERS IN A STRING....
+
+string num = "123456";
+string result = "";
+
+for(int i=0; i<num.size(); i++) {
+    result += num[i];
+
+    if(i < num.size()-1) {
+        if(num[i] %2 != 0 && num[i+1] %2 != 0) {
+            result += "-";
+        }
+    }
+}
+cout << result;
+
+
 //-------------------------------------------------QUESTION 13. WAP TO FIND MISSING NUMBER FROM VECTOR.....
 // EXAMPLE INPUT : {1,2,3,5,6}
 // OUTPUT : {4}
 
 
+
+// vector<int>v{1,3,4,6,7,9,12};
+
+// for(int i=0; i<v.size()-1; i++){
+//      int c = v[i];
+//      int n = v[i+1];
+
+//      if (n - c >1){
+//           for(int k = c+1; k < n; k++){
+//                cout<<k<<" ";
+//           }
+//      }
+// }
+
 // ------------------------------------------------QUESTION 14. WAP TO REMOVE DUPLICATES VALUES FROM VECTOR......
 
+// vector<int>v;
 
+// int size  , num;
+// cin>>size;
+
+// for(int i=0; i<size; i++){
+//      cin>>num;
+//      v.push_back(num);
+// }
+
+//-----------------------MY APPRAOCH
+
+// for(int i=0 ; i<size; i++){
+//      int j=0;
+//      if(v[j] == v[i+1]){
+//           v[i+1]=-1;
+//           j++;
+//           i--;
+//      }
+// }
+
+// for(int i=0 ; i<size; i++){
+//      if (v[i] != -1){
+//           cout<<v[i]<<" ";
+//      }
+// }
+
+
+// -------------------BRUTEFORCE APPROACH
+
+// for(int i=0; i<size; i++){
+//      for(int j=i+1; j<size; j++){
+//           if(v[j] == v[i]){
+//                v[j]=-1;
+//           }
+//      }
+// }
+
+// for(int i=0 ; i<size; i++){
+//      if (v[i] != -1){
+//           cout<<v[i]<<" ";
+//      }
+// }
+
+
+
+//---------------------------------------------QUESTION 15.  MOVE ZEROS IN THE END OF THE VECTOR..........
+
+// vector<int>v{1,0,2,0,0,3,4,1,0,8,9};
+
+// int j=0;
+
+// for(int i=0; i<v.size(); i++){
+//      if (v[i] != 0){
+//           swap(v[i] ,v[j]);
+//           j++;
+//      }
+// }
+
+// for(int i=0; i<v.size(); i++){
+//      cout<<v[i]<<" ";
+// }
 
 }
