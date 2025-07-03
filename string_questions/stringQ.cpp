@@ -96,20 +96,58 @@ int main (){
 
 //----------------------------------------------QUESTION 8. INSERT DASH BETWEEN TWO ODD NUMBERS IN A STRING....
 
-string num = "123456";
-string result = "";
+// string num = "1345793";
+// string result = "";
 
-for(int i=0; i<num.size(); i++) {
-    result += num[i];
+// for(int i=0; i<num.size(); i++) {
+//     result += num[i];
 
-    if(i < num.size()-1) {
-        if(num[i] %2 != 0 && num[i+1] %2 != 0) {
-            result += "-";
+//     if(i < num.size()-1) {
+//         if(num[i] %2 != 0 && num[i+1] %2 != 0) {
+//             result += "-";
+//         }
+//     }
+// }
+// cout << result;
+
+
+
+//-------------------------------------------------QUESTION . PRINT THE WORD OF STRING WITH MAXIMUM LENGTH.........
+
+  string str = "cpp is good language to learn";
+
+    int maxLen = 0;
+    int maxStart = 0;
+
+    int i = 0;
+    while (i < str.size()) {
+     
+        while (i < str.size() && str[i] == ' ') {
+            i++;
+        }
+
+        int start = i;
+        int len = 0;
+
+      
+        while (i < str.size() && str[i] != ' ') {
+            i++;
+            len++;
+        }
+
+    
+        if (len > maxLen) {
+            maxLen = len;
+            maxStart = start;
         }
     }
-}
-cout << result;
 
+    for (int j = maxStart; j < maxStart + maxLen; j++) {
+        cout << str[j];
+    }
+    cout << endl;
+
+    
 
 //-------------------------------------------------QUESTION 13. WAP TO FIND MISSING NUMBER FROM VECTOR.....
 // EXAMPLE INPUT : {1,2,3,5,6}
