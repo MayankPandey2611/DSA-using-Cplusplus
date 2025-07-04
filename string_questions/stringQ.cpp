@@ -4,6 +4,8 @@
 #include<vector>
 using namespace std;
 
+
+
 int main (){
 
      //-----------------------------------------------QUESTION 11. CHECK ANAGRAM 
@@ -114,38 +116,38 @@ int main (){
 
 //-------------------------------------------------QUESTION . PRINT THE WORD OF STRING WITH MAXIMUM LENGTH.........
 
-  string str = "cpp is good language to learn";
+//   string str = "cpp is good language to learn";
 
-    int maxLen = 0;
-    int maxStart = 0;
+//     int maxLen = 0;
+//     int maxStart = 0;
 
-    int i = 0;
-    while (i < str.size()) {
+//     int i = 0;
+//     while (i < str.size()) {
      
-        while (i < str.size() && str[i] == ' ') {
-            i++;
-        }
+//         while (i < str.size() && str[i] == ' ') {
+//             i++;
+//         }
 
-        int start = i;
-        int len = 0;
+//         int start = i;
+//         int len = 0;
 
       
-        while (i < str.size() && str[i] != ' ') {
-            i++;
-            len++;
-        }
+//         while (i < str.size() && str[i] != ' ') {
+//             i++;
+//             len++;
+//         }
 
     
-        if (len > maxLen) {
-            maxLen = len;
-            maxStart = start;
-        }
-    }
+//         if (len > maxLen) {
+//             maxLen = len;
+//             maxStart = start;
+//         }
+//     }
 
-    for (int j = maxStart; j < maxStart + maxLen; j++) {
-        cout << str[j];
-    }
-    cout << endl;
+//     for (int j = maxStart; j < maxStart + maxLen; j++) {
+//         cout << str[j];
+//     }
+//     cout << endl;
 
     
 
@@ -232,5 +234,29 @@ int main (){
 // for(int i=0; i<v.size(); i++){
 //      cout<<v[i]<<" ";
 // }
+
+
+//----------------------------------------------QUESTION 16. SWAP THE FIRST AND LAST CHARACTERS OF THE WORDS PRESENT IN THE STRING...........
+
+// string str = "Quality on Time";
+
+// int n = str.size();
+// int st = 0;
+
+// for (int i = 0; i <= n; i++){
+//     if(str[i] == ' ' || i == n){
+//         int end = i-1;
+//         if(end > st){
+//             swap(str[st] ,str[end]);
+//         }
+//         st = i+1;
+//     }
+// }
+
+// cout<<str;
+
+
+
+
 
 }
