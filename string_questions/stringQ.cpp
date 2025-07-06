@@ -2,6 +2,8 @@
 #include<string>
 #include<algorithm>
 #include<vector>
+#include<bits/stdc++.h>
+#include <cctype>
 using namespace std;
 
 
@@ -114,7 +116,8 @@ int main (){
 
 
 
-//-------------------------------------------------QUESTION . PRINT THE WORD OF STRING WITH MAXIMUM LENGTH.........
+//-------------------------------------------------QUESTION 4. PRINT THE WORD OF STRING WITH MAXIMUM LENGTH.........
+
 
 //   string str = "cpp is good language to learn";
 
@@ -150,6 +153,35 @@ int main (){
 //     cout << endl;
 
     
+
+// ------------------------------------------------QUESTION 3. CAPITALIZE THE FIRST LETTER OF THE EACH WORD......
+
+
+string str ;
+getline(cin , str);
+
+for(int i=0; i<str.size(); i++){
+     if( i ==0 || str[i-1] == ' '){
+          str[i] = toupper(str[i]) ;
+     }
+     else{
+          str[i] =  tolower(str[i]);
+     }
+}
+cout<<str;
+
+
+// WITHOUT USING TOUPPER AND TOLOWER FUNCTION................
+
+//     if (str[i] >= 'a' && str[i] <= 'z') {
+//                 str[i] = str[i] - ('a' - 'A');
+//             }
+//         } else {
+//            
+//             if (str[i] >= 'A' && str[i] <= 'Z') {
+//                 str[i] = str[i] + ('a' - 'A');
+//             }
+
 
 //-------------------------------------------------QUESTION 13. WAP TO FIND MISSING NUMBER FROM VECTOR.....
 // EXAMPLE INPUT : {1,2,3,5,6}
