@@ -138,30 +138,29 @@ using namespace std;
 
 
 
+//------------------------------------QUESTION 2. REVERSE A STRING USING STACK...
 
-    //-------------------------------QUESTION 2. REVERSE A STRING USING STACK...
+// void rev(string str){
+//         stack<string>st;
 
-void rev(string str){
-        stack<string>st;
+//     for(int i=0; i<str.size(); i++){
+//         string wrd ="";
 
-    for(int i=0; i<str.size(); i++){
-        string wrd ="";
+//         while( str[i] != ' ' && i < str.length()){
+//             wrd+=str[i];
+//             i++;
+//         }
+//         st.push(wrd);
+//     }
 
-        while( str[i] != ' ' && i < str.length()){
-            wrd+=str[i];
-            i++;
-        }
-        st.push(wrd);
-    }
+//     while( !st.empty()){
+//         cout<<st.top()<<" ";
+//         st.pop();
+//     }
+// }
+// int main(){
 
-    while( !st.empty()){
-        cout<<st.top()<<" ";
-        st.pop();
-    }
-}
-int main(){
+// string str = "sky is blue";
+// rev(str);
 
-string str = "sky is blue";
-rev(str);
-
-}
+// }
