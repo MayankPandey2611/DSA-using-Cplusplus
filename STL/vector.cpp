@@ -4,7 +4,7 @@
 #include<algorithm>
 using namespace std;
 
-int main(){
+// int main(){
 // TYPES => 
 // 1. DYNAMIC ARRAY => SIZE DEPENDS UPON USER INPUTS.
     // vector<int> v;
@@ -135,5 +135,58 @@ int main(){
 
 
 
+// }
 
+// VECTORS QUESTIONS......
+// --------------------------------------------------QUESTION 1. MOVE ZERO IN THE END OF THE VECTOR-----------------------------#
+// void movezero(vector<int> nums){
+//     int j =0;
+//     for(int i=0; i<nums.size(); i++){
+//         if(nums[i] != 0){
+//             swap(nums[i] , nums[j]);
+//             j++;
+//         }
+//     }
+
+//     for(auto k:nums){
+//         cout<<k<<" ";
+//     }
+// }
+
+// int main(){
+//     vector<int>arr{1,0,9,2,0,98,0,8,29};
+// movezero(arr);
+
+// }
+
+void secondlargest(vector<int> num , int n){
+
+    if( n== 1){
+        cout<<num[0];
+        return;
+    }
+    
+    //CAN ALSO USE INT_MIN IN BOTH PLACES FOR BETTERMENT....
+   int large = num[0];
+   int second = num[1];
+
+   for(int i=0; i<n; i++){
+    if (num[i] > large){
+        second = large;
+        large = num[i];
+    }
+    else if(num[i] > second && num[i] != large){
+        second = num[i];
+    }
+   }
+
+   cout<<second;
+
+}
+
+
+int main(){
+    vector<int>arr{1,2,1,3,2,4};
+    int size = arr.size();
+    secondlargest(arr,size);
 }
