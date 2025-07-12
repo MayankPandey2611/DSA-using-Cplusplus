@@ -49,6 +49,7 @@ cout<<endl;
 
     // INBULIT FUNCTIONS IN LIST.........
     // 1. REVERSE()
+    
     l1.reverse();
      for(auto k :l1){
         cout<<k<<" ";
@@ -57,11 +58,20 @@ cout<<endl;
 
 
 // 2.  REMOVE()
+
 l1.remove(21);
 for(auto k :l1){
         cout<<k<<" ";
     }
 cout<<endl;
 
+
+//3. REMOVE_IF()
+
+l1.remove_if([](int a){return a>40;});
+for(auto k :l1){
+        cout<<k<<" ";
+    }
+cout<<endl;
 
 }
