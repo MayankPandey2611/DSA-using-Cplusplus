@@ -83,25 +83,5 @@ int main(){
 
 
 
-    // QUESTION 4. CHECK NUMBER IS PRIME OR NOT......
-
-    int num;
-    cin>>num;
-
-    bool check = false;
-   for(int i= 2; i*i<=num; i++){
-
-    if(num % i == 0){
-        check=true;
-    }
-
-   }
-
-   if(check){
-    cout<<" not prime";
-   }
-   else{
-    cout<<"prime";
-   }
-   
 }
+
