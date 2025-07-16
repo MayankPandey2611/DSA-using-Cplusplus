@@ -42,6 +42,3 @@ using namespace std;
 
 
 
-// QUESTION 13. CHECK IF TWO STRINGS ARE ANAGRAM OR NOT........
-
-string str ;
