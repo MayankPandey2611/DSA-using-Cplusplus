@@ -314,22 +314,22 @@ int main()
 
     // QUESTION 16. FIND AMSTRONG NUMBER.
 
-    // int num;
-    // cin>>num;
+    int num;
+    cin>>num;
 
-    // int num1=num;
-    // int ans=0;
-    // while(num>0){
-    //     int digit = num%10;
-    //     ans+=digit*digit*digit;
-    //     num=num/10;
-    // }
-    // if(ans==num1){
-    //     cout<<"Amstrong";
-    // }
-    // else{
-    //     cout<<"Not";
-    // }
+    int num1=num;
+    int ans=0;
+    while(num>0){
+        int digit = num%10;
+        ans+=digit*digit*digit;
+        num=num/10;
+    }
+    if(ans==num1){
+        cout<<"Amstrong";
+    }
+    else{
+        cout<<"Not";
+    }
 
     // QUESTION 17. AP SERIES.
 
