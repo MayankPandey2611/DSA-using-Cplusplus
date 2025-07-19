@@ -12,6 +12,7 @@ void reverse(int n, vector<int>&arr,int st , int e){
         st++;
         e--;
     }
+    
 }
 
 int main(){

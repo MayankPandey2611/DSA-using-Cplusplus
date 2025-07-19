@@ -213,66 +213,68 @@ using namespace std;
 
 
 // MERGE SORT 
-void mergeboth(int arr[] , int s , int m , int e){
 
-    int arr2[e+1];
+// void mergeboth(int arr[] , int s , int m , int e){
 
-    int i=s;
-    int j= m+1;
-    int k=s;
+//     int arr2[e+1];
 
-    while (i<=m && j<=e){
+//     int i=s;
+//     int j= m+1;
+//     int k=s;
 
-        if(arr[i] < arr[j]){
-            arr2[k] = arr [i];
-            i++;
-         }
+//     while (i<=m && j<=e){
 
-         else{
-            arr2[k] = arr[j];
-            j++;
-         }
-         k++;
-    }
+//         if(arr[i] < arr[j]){
+//             arr2[k] = arr [i];
+//             i++;
+//          }
 
-    while(i<=m){
-        arr2[k]=arr[i];
-        i++;
-        k++;
-    }
+//          else{
+//             arr2[k] = arr[j];
+//             j++;
+//          }
+//          k++;
+//     }
 
-    while(j<=e){
-        arr2[k] = arr[j];
-        j++;
-        k++;
-    }
+//     while(i<=m){
+//         arr2[k]=arr[i];
+//         i++;
+//         k++;
+//     }
 
-    for (int i=s; i<=e; i++ ){
-        arr [i] = arr2[i];
-    }
+//     while(j<=e){
+//         arr2[k] = arr[j];
+//         j++;
+//         k++;
+//     }
 
-}
+//     for (int i=s; i<=e; i++ ){
+//         arr [i] = arr2[i];
+//     }
 
-void merge(int arr[] , int s ,int e) {
+// }
+
+// void merge(int arr[] , int s ,int e) {
     
-    if (s<e){
-        int mid = (s+e) / 2;
-        merge(arr , s , mid);
-        merge (arr , mid+1 , e);
+//     if (s<e){
+//         int mid = (s+e) / 2;
+//         merge(arr , s , mid);
+//         merge (arr , mid+1 , e);
 
-        mergeboth (arr ,s ,mid ,e);
-    }
-}
-int main (){
+//         mergeboth (arr ,s ,mid ,e);
+//     }
+// }
+// int main (){
 
-    int arr []={2,1,5,4,1,6,7,0,9,7,69};
+//     int arr []={2,1,5,4,1,6,7,0,9,7,69};
 
-    int s = sizeof(arr) / sizeof(arr[0]);
+//     int s = sizeof(arr) / sizeof(arr[0]);
 
-    merge(arr , 0 , s-1);
+//     merge(arr , 0 , s-1);
 
-    for (int i=0 ; i<s ; i++){
-        cout << arr[i] << " ";
-    }
+//     for (int i=0 ; i<s ; i++){
+//         cout << arr[i] << " ";
+//     }
 
-}
+// }
+
