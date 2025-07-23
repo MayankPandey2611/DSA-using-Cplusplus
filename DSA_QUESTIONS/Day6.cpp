@@ -157,23 +157,23 @@ using namespace std;
 // METHOD 2. UNORDERED SET......... TC => O(n+m);
 
 
-int main(){
-    vector<int>a1{2,1,3,4,2,5,8};
-    vector<int>a2{8,5,6,4,3,12,3,4,5,2,1};
+// int main(){
+//     vector<int>a1{2,1,3,4,2,5,8};
+//     vector<int>a2{8,5,6,4,3,12,3,4,5,2,1};
 
-    vector<int>a3{};
+//     vector<int>a3{};
 
-    unordered_set<int>s(a1.begin(),a1.end());
+//     unordered_set<int>s(a1.begin(),a1.end());
 
 
-    for(int i:a2){
-        if(s.count(i)){
-            a3.push_back(i);
-            s.erase(i);
-        }
-    }
+//     for(int i:a2){
+//         if(s.count(i)){
+//             a3.push_back(i);
+//             s.erase(i);
+//         }
+//     }
 
-        for(auto k:a3){
-        cout<<k<<" ";
-    }
-}
+//         for(auto k:a3){
+//         cout<<k<<" ";
+//     }
+// }
