@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cctype>
-
+#include <climits>
 #include<string>
 #include<vector>
 #include<algorithm>
@@ -32,35 +32,29 @@ using namespace std;
 
 
 // QUESTION 22 . FIND THE MAJORITY ELEMENT FROM AN ARRAY............
+// MAJORITY => ELEMENT OCCURS MORE THAN OR EQUAL TO THE HALF OF SIZE OF ARRAY...
+// METHOD 1.
 
-
-int main() {
-    vector<int> arr{1, 2, 1, 3,4,5,5,5};
-    unordered_map<int, int> freq;
-    int n = arr.size();
+// int main() {
+//     vector<int> arr{1,2,1,2,1,1,1};
+//     unordered_map<int, int> freq;
+//     int n = arr.size();
     
-    for (int num : arr) {
-        freq[num]++;
-        if (freq[num] >= 2) {
-            cout << "Majority element: " << num << endl;
+//     for (int num : arr) {
+//         freq[num]++;
+//         if (freq[num] >= n/2) {
+//             cout << "Majority element: " << num << endl;
+//             return 0;
+//         }
+//     }
 
-            // return 0;
-        }
-    }
-
-    for(auto k : freq){
-        cout<<k.first<<"="<<k.second<<" ";
-    }
-    cout << "No majority element found." << endl;
-    return 0;
-}
+    
+//     cout << "No majority element found." << endl;
+//     return 0;
+// }
 
 
-
-
-// #include <iostream>
-// #include <vector>
-// using namespace std;
+// METHOD 2. (MOORE VOTING ALGORITHM.....)
 
 // int findMajorityElement(vector<int>& arr) {
 //     int count = 0, candidate = -1;
@@ -82,7 +76,7 @@ int main() {
 // }
 
 // int main() {
-//     vector<int> arr{1, 2, 1, 3, 1, 4, 5, 1};
+//     vector<int> arr{1,1,1,2};
 //     int result = findMajorityElement(arr);
     
 //     if (result != -1)
@@ -94,31 +88,66 @@ int main() {
 // }
 
 
-// #include <iostream>
-// #include <vector>
-// #include <unordered_map>
-// using namespace std;
+// QUESTION 23. FIND THE MOST REPEATING ELEMENT OF THE ARRAY..............
 
-// int main() {
-//     vector<int> arr = {1, 2, 1, 3, 2, 1, 8, 9, 7, 6, 4, 3, 5, 4, 6};
-//     unordered_map<int, int> freq;
+// int main(){
+//     vector<int>arr{1,2,3,4,5,0};
 
-//     // Count frequencies
-//     for (int num : arr) {
+//     unordered_map<int,int>freq;
+
+//     for(int num : arr){
 //         freq[num]++;
 //     }
 
-//     // Find the mode
-//     int mode = arr[0];
-//     int maxFreq = 0;
-    
-//     for (auto [key, val] : freq) {
-//         if (val > maxFreq) {
-//             maxFreq = val;
-//             mode = key;
+//     int element = arr[0];
+//     int elecount = 0;
+
+//     for(auto it : freq){
+//         int key = it.first;
+//         int val = it.second;
+//         if(val >= elecount){
+//             elecount = val;
+//             element = key;
 //         }
 //     }
-
-//     cout << "Mode (most frequent element): " << mode << " (occurs " << maxFreq << " times)" << endl;
-//     return 0;
+//     if(elecount < 2){
+//         cout<<"No RE in an array";
+//         return 0;
+//     }
+//     cout<<element<<" is the MRE with the count of = "<<elecount;
 // }
+
+
+// QUESTION 24. FIND THE MAX AND MIN ELEMENT FROM THE ARRAY...........
+
+// int main(){
+//     vector<int>arr{12,9,0,2};
+
+//     int max = INT_MIN;
+//     int min = INT_MAX;
+
+//     for(int i=0; i<arr.size(); i++){
+//         if(arr[i] > max){
+//             max = arr[i];
+//         }
+//         else if(arr[i] < min){
+//             min = arr[i];
+//         }
+//     }
+//     cout<<"MAX = "<<max<<" MIN = "<<min;
+// }
+
+// QUESTION 25. SORT AN ARRAY USING BUBBLE SORT................
+
+void bs(vector<int>& arr){
+    
+}
+
+int main(){
+    vector<int>arr{9,8,3,2,1,0,3,1,4,90};
+
+    bs(arr);
+    for(auto k:arr){
+        cout<<k<<" ";
+    }
+}
