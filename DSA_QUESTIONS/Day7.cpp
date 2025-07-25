@@ -137,17 +137,3 @@ using namespace std;
 //     cout<<"MAX = "<<max<<" MIN = "<<min;
 // }
 
-// QUESTION 25. SORT AN ARRAY USING BUBBLE SORT................
-
-void bs(vector<int>& arr){
-    
-}
-
-int main(){
-    vector<int>arr{9,8,3,2,1,0,3,1,4,90};
-
-    bs(arr);
-    for(auto k:arr){
-        cout<<k<<" ";
-    }
-}
