@@ -141,4 +141,30 @@ using namespace std;
 
 
 
-// 
+// QUESTION 37. LONGEST CONSECUTIVE SEQUENCE.................
+
+int longestseq(vector<int>& arr){
+    sort(arr.begin(), arr.end());
+    int count =1;
+    int maxcount =1;
+    for(int i=1; i<arr.size(); i++){
+       if(arr[i] == arr[i-1]){
+        continue;
+       }
+       else if(arr[i] == arr[i-1] +1){
+        count++;
+       }
+       else{
+        count =1;
+       }
+       maxcount=max(count,maxcount);
+    }
+    return maxcount;
+}
+
+int main(){
+    vector<int>arr {1,0,1,2};
+
+    int result = longestseq(arr);
+    cout<<result;
+}
