@@ -43,7 +43,3 @@ using namespace std;
 //     int result = findsingle(nums);
 //     cout<<result;
 // }
-
-// QUESTION 40. REVERSE BITS..........................
-
-
