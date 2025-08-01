@@ -4,7 +4,7 @@
 #include<algorithm>
 using namespace std;
 
-// int main(){
+int main(){
 // TYPES => 
 // 1. DYNAMIC ARRAY => SIZE DEPENDS UPON USER INPUTS.
     // vector<int> v;
@@ -159,40 +159,40 @@ using namespace std;
 
 // }
 
-void secondlargest(vector<int> num , int n){
+// void secondlargest(vector<int> num , int n){
 
-    if( n== 1){
-        cout<<num[0];
-        return;
-    }
+//     if( n== 1){
+//         cout<<num[0];
+//         return;
+//     }
     
-    //CAN ALSO USE INT_MIN IN BOTH PLACES FOR BETTERMENT....
-   int large = num[0];
-   int second = num[1];
+//     //CAN ALSO USE INT_MIN IN BOTH PLACES FOR BETTERMENT....
+//    int large = num[0];
+//    int second = num[1];
 
-   for(int i=0; i<n; i++){
-    if (num[i] > large){
-        second = large;
-        large = num[i];
-    }
-    else if(num[i] > second && num[i] != large){
-        second = num[i];
-    }
-   }
+//    for(int i=0; i<n; i++){
+//     if (num[i] > large){
+//         second = large;
+//         large = num[i];
+//     }
+//     else if(num[i] > second && num[i] != large){
+//         second = num[i];
+//     }
+//    }
 
-   cout<<second;
+//    cout<<second;
 
-}
+// }
 
 
-int main(){
-    vector<int>arr{34,56};
-    int size = arr.size();
-    secondlargest(arr,size);
-}
+// int main(){
+//     vector<int>arr{34,56};
+//     int size = arr.size();
+//     secondlargest(arr,size);
+// }
 
 // int main(){
 //     vector<int>v{12,3,42,1};
 //     sort(v.begin() , v.end());
     
-// }
+//  }
