@@ -64,12 +64,22 @@ int main(){
     int p = arr[n-1];
     int a =p;
     int sum =0;
-
-    while(p>0){
+    int s1 = 0;
+    while(p>0 ){
         int d = p%10;
         sum += d;
         p /= 10;
     }
+    if(sum != 0 || sum !=1 || sum !=2 || sum !=3 || sum !=4 || sum !=5 ||sum !=6 || sum !=7 || sum !=8 || sum !=9){
+        int d1 = sum%10;
+        s1 += d1;
+        sum /= 10;
+    }
+    else{
     cout<<sum * a;
+        return 0;
+    }
+    cout<<s1*a;
+
 
 }
