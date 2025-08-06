@@ -55,31 +55,75 @@ using namespace std;
 //     cout<<ans;
 // }
 
-// QUESTION 46. 
+// QUESTION 46.  MULTIPLY THE SUM OF DIGITS OF PRIME NUMBER WITH THE PRIME NUMBER AND SUM SHOULD BE IN SINGLE DIGIT...................
 
-int main(){
-    int n;
-    cin>>n;
-    int arr[]={2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,57,59,61,67};
-    int p = arr[n-1];
-    int a =p;
-    int sum =0;
-    int s1 = 0;
-    while(p>0 ){
-        int d = p%10;
-        sum += d;
-        p /= 10;
-    }
-    if(sum != 0 || sum !=1 || sum !=2 || sum !=3 || sum !=4 || sum !=5 ||sum !=6 || sum !=7 || sum !=8 || sum !=9){
-        int d1 = sum%10;
-        s1 += d1;
-        sum /= 10;
-    }
-    else{
-    cout<<sum * a;
-        return 0;
-    }
-    cout<<s1*a;
+// int main(){
+//     int n;
+//     cin>>n;
+//     int arr[]={2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79};
+//     int p = arr[n-1];
+//     int a =p;
+//     int sum =0;
+
+//     while(p>0){
+//         int d = p%10;
+//         sum += d;
+//         p /= 10;
+//     }
+//     while(sum > 9){
+//         int s1 = 0;
+//         while(sum > 0){
+//             int d = sum % 10;
+//             s1 += d;
+//             sum /= 10;
+//         }
+//         sum = s1;
+//     }
+//     cout<<sum * a;
+   
+// }
 
 
-}
+// QUESTION 47. ADD DIGITS..
+
+// int main(){
+//     int num;
+//     cin>>num;
+
+//     int sum =0;
+
+//     while(num>0){
+//         int d = num % 10;
+//         sum += d;
+//         num /= 10;
+
+//     }
+
+//     while(sum > 9){
+//         int s1 =0;
+//         while(sum>0){
+//             int d = sum % 10;
+//             s1 += d;
+//             sum /=10;
+//         }
+//         sum = s1;
+//     }
+
+//     cout<<sum;
+// }
+
+
+// QUESTION 48. SUM OF DIGITS FROM GIVEN RANGE......
+
+// int main(){
+//     int n,m ;
+//     cin>>n>>m;
+//     int sum =0;
+
+//     for(int i =n; i<= m; i++){
+//         sum += i;
+//     }
+//     cout<<sum;
+// }
+
+
