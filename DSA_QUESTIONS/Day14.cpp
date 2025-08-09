@@ -58,55 +58,84 @@ using namespace std;
 
 // QUESTION 50. 3 SUM.....
 
-vector<vector<int>> threesum(vector<int>& arr){
-    sort(arr.begin(),arr.end());
-   vector<vector<int>>result;
-    int n = arr.size();
+// vector<vector<int>> threesum(vector<int>& arr){
+//     sort(arr.begin(),arr.end());
+//    vector<vector<int>>result;
+//     int n = arr.size();
 
-    for(int i=0; i<n; i++){
-        if(i > 0 && arr[i] == arr[i-1]  ){
-            continue;
-        }
+//     for(int i=0; i<n; i++){
+//         if(i > 0 && arr[i] == arr[i-1]  ){
+//             continue;
+//         }
 
-        int target = -arr[i];
-        int start = i+1;
-        int end = n-1;
+//         int target = -arr[i];
+//         int start = i+1;
+//         int end = n-1;
 
-        while(start < end){
-            int sum = arr[start]+arr[end];
-            if(sum == target){
-                result.push_back({arr[i],arr[start],arr[end]});
-                while(start < end && arr[start] == arr[start+1]){
-                    ++start;
-                }
-                while(start < end && arr[end] == arr[end-1]){
-                    --end;
-                }
-                ++start;
-                --end;
-            }
-            else if(sum <target){
-                ++start;
-            }
-            else{
-                --end;
-            }
-        }
-    }
-    return result;
-}
+//         while(start < end){
+//             int sum = arr[start]+arr[end];
+//             if(sum == target){
+//                 result.push_back({arr[i],arr[start],arr[end]});
+//                 while(start < end && arr[start] == arr[start+1]){
+//                     ++start;
+//                 }
+//                 while(start < end && arr[end] == arr[end-1]){
+//                     --end;
+//                 }
+//                 ++start;
+//                 --end;
+//             }
+//             else if(sum <target){
+//                 ++start;
+//             }
+//             else{
+//                 --end;
+//             }
+//         }
+//     }
+//     return result;
+// }
 
 
-int main(){
-    vector<int>arr{-1,0,1,2,-1,-4};
+// int main(){
+//     vector<int>arr{-1,0,1,2,-1,-4};
 
-    vector<vector<int>>ans = threesum(arr);
+//     vector<vector<int>>ans = threesum(arr);
    
-    for (auto &triplet : ans) {
-        for (int num : triplet) {
-            cout << num << " ";
-        }
-        cout << endl;
+//     for (auto &triplet : ans) {
+//         for (int num : triplet) {
+//             cout << num << " ";
+//         }
+//         cout << endl;
+//     }
+
+// }
+
+
+
+// QUESTION 51. POWER OF TWO.....
+
+bool check(int n){
+    if(n <= 0){
+        return false;
     }
 
+    while(n % 2 == 0){
+        n = n/2;
+    }
+    return n ==1;
+}
+int main(){
+    int n;
+    cin>>n;
+    
+    bool ans = check(n);
+
+    if(ans){
+        cout<<"true";
+    }
+    else{
+        cout<<"false";
+    }
+    
 }
