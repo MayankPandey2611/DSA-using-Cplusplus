@@ -115,27 +115,27 @@ using namespace std;
 
 // QUESTION 51. POWER OF TWO.....
 
-bool check(int n){
-    if(n <= 0){
-        return false;
-    }
+// bool check(int n){
+//     if(n <= 0){
+//         return false;
+//     }
 
-    while(n % 2 == 0){
-        n = n/2;
-    }
-    return n ==1;
-}
-int main(){
-    int n;
-    cin>>n;
+//     while(n % 2 == 0){
+//         n = n/2;
+//     }
+//     return n ==1;
+// }
+// int main(){
+//     int n;
+//     cin>>n;
     
-    bool ans = check(n);
+//     bool ans = check(n);
 
-    if(ans){
-        cout<<"true";
-    }
-    else{
-        cout<<"false";
-    }
+//     if(ans){
+//         cout<<"true";
+//     }
+//     else{
+//         cout<<"false";
+//     }
     
-}
+// }
