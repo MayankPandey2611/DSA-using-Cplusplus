@@ -91,27 +91,65 @@ using namespace std;
 
 // QUESTION 64. CAN PLACE FLOWERS......
 
-bool placeflower(vector<int>& f , int n){
-    int c = 0;
-    int s = f.size();
+// bool placeflower(vector<int>& f , int n){
+//     int c = 0;
+//     int s = f.size();
 
-    for(int i=0; i<s && c <n; i++){
-        if(f[i] == 0){
-            bool l = (i == 0) || (f[i-1] == 0);
-            bool r = (i == s-1) || (f[i+1] == 0);
+//     for(int i=0; i<s && c <n; i++){
+//         if(f[i] == 0){
+//             bool l = (i == 0) || (f[i-1] == 0);
+//             bool r = (i == s-1) || (f[i+1] == 0);
 
-            if(l && r){
-                f[i] =1;
-                c++;
-                i++;
-            }
+//             if(l && r){
+//                 f[i] =1;
+//                 c++;
+//                 i++;
+//             }
+//         }
+//     }
+//     return c>=n;
+// }
+// int main(){
+//     vector<int>flower{1,0,0,0,0,0,1};
+//     int n =2;
+//     bool ans = placeflower(flower,n);
+//     cout<<ans;
+// }
+
+
+
+// QUESTION 65. NEW 21 GAME...........
+
+double game(int n, int k , int maxp){
+    if (k == 0 || n >= k-1+maxp){
+        return 1.0;
+    }
+
+    vector<double>dp(n+1);
+    dp[0] = 1.0;
+    double ws = 1.0;
+    double ans = 0.0;
+
+    for(int i=1; i<=n; ++i){
+        dp[i] = ws / maxp ;
+        if(i < k){
+            ws += dp[i];
+        }
+        else{
+            ans += dp[i];
+        }
+
+        if(i-maxp >= 0){
+            ws -= dp[i-maxp];
         }
     }
-    return c>=n;
+    return ans;
 }
+
 int main(){
-    vector<int>flower{1,0,0,0,0,0,1};
-    int n =2;
-    bool ans = placeflower(flower,n);
+    int n,k,maxpts;
+    cin>>n>>k>>maxpts;
+
+    double ans = game(n,k,maxpts);
     cout<<ans;
 }
