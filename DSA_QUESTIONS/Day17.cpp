@@ -120,36 +120,82 @@ using namespace std;
 
 // QUESTION 65. NEW 21 GAME...........
 
-double game(int n, int k , int maxp){
-    if (k == 0 || n >= k-1+maxp){
-        return 1.0;
-    }
+// double game(int n, int k , int maxp){
+//     if (k == 0 || n >= k-1+maxp){
+//         return 1.0;
+//     }
 
-    vector<double>dp(n+1);
-    dp[0] = 1.0;
-    double ws = 1.0;
-    double ans = 0.0;
+//     vector<double>dp(n+1);
+//     dp[0] = 1.0;
+//     double ws = 1.0;
+//     double ans = 0.0;
 
-    for(int i=1; i<=n; ++i){
-        dp[i] = ws / maxp ;
-        if(i < k){
-            ws += dp[i];
-        }
-        else{
-            ans += dp[i];
-        }
+//     for(int i=1; i<=n; ++i){
+//         dp[i] = ws / maxp ;
+//         if(i < k){
+//             ws += dp[i];
+//         }
+//         else{
+//             ans += dp[i];
+//         }
 
-        if(i-maxp >= 0){
-            ws -= dp[i-maxp];
-        }
-    }
-    return ans;
-}
+//         if(i-maxp >= 0){
+//             ws -= dp[i-maxp];
+//         }
+//     }
+//     return ans;
+// }
 
-int main(){
-    int n,k,maxpts;
-    cin>>n>>k>>maxpts;
+// int main(){
+//     int n,k,maxpts;
+//     cin>>n>>k>>maxpts;
 
-    double ans = game(n,k,maxpts);
-    cout<<ans;
-}
+//     double ans = game(n,k,maxpts);
+//     cout<<ans;
+// }
+
+
+// QUESTION 66. LETTER COMBINATIONS OF A PHONE NUMBER............
+
+//  void solve(string digit, string output, int index, vector<string>& ans , string mapping[]) {
+
+//         if (index >= digit.length()) {
+//             ans.push_back(output);
+//             return;
+//         }
+
+//         int number = digit[index] - '0';
+//         string value = mapping[number];
+
+//         for (int i = 0; i < value.length(); i++) {
+//             output.push_back(value[i]);
+//             solve(digit, output, index + 1, ans, mapping);
+//             output.pop_back();
+//         }
+//     }
+
+//  vector<string> letterCombinations(string digits) {
+//         vector<string> ans;
+//         if (digits.length() <= 0) {
+//             return ans;
+//         }
+//         string output;
+//         int index = 0;
+//         string mapping[10] = {"",    "",    "abc",  "def", "ghi",
+//                               "jkl", "mno", "pqrs", "tuv", "wxyz"};
+//         solve(digits, output, index, ans, mapping);
+//         return ans;
+//     }
+
+// int main(){
+//     string digits;
+//     cin>>digits;
+//     vector<string>ans=letterCombinations(digits);
+
+//     for(auto k : ans){
+//         cout<<k<<" ";
+//     }
+// }
+
+
+
