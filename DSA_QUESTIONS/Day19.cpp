@@ -174,34 +174,37 @@ using namespace std;
 
 // QUESTION 73.  Find the Index of the First Occurrence in a String .....
 
-int findindex(string h , string n){
-    int a = h.size();
-    int b = n.size();
+// int findindex(string h , string n){
+//     int a = h.size();
+//     int b = n.size();
 
-    if(b == 0){
-        return 0;
-    }
+//     if(b == 0){
+//         return 0;
+//     }
 
-    for(int i=0; i <= a-b; i++){
-        int j =0;
+//     for(int i=0; i <= a-b; i++){
+//         int j =0;
 
-        while(j < b && h[i+j] == n[j]){
-            j++;
-        }
+//         while(j < b && h[i+j] == n[j]){
+//             j++;
+//         }
 
-        if(j == b){
-            return i;
-        }
-    }
-    return -1;
-}
+//         if(j == b){
+//             return i;
+//         }
+//     }
+//     return -1;
+// }
 
-int main(){
-    string h ;
-    string n ;
-    cin>>h;
-    cin>>n;
+// int main(){
+//     string h ;
+//     string n ;
+//     cin>>h;
+//     cin>>n;
 
-    int index = findindex(h,n);
-    cout<<index;
-}
+//     int index = findindex(h,n);
+//     cout<<index;
+// }
+
+
+
