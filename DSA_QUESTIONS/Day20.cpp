@@ -174,24 +174,24 @@ using namespace std;
 // QUESTION 79. CLIMBING STARIS ..................
 
 
-int countsteps(int n){
-    if (n <= 2){
-        return n;
-    }
+// int countsteps(int n){
+//     if (n <= 2){
+//         return n;
+//     }
 
-    int a = 1, b = 2 , c;
-    for(int i=3; i<=n; i++){
-        c = a+b;
-        a = b;
-        b = c;
-    }
-    return b;
-}
+//     int a = 1, b = 2 , c;
+//     for(int i=3; i<=n; i++){
+//         c = a+b;
+//         a = b;
+//         b = c;
+//     }
+//     return b;
+// }
 
 
-int main(){
-    int n;
-    cin>>n;
-    int steps = countsteps(n);
-    cout<<steps;
-}
+// int main(){
+//     int n;
+//     cin>>n;
+//     int steps = countsteps(n);
+//     cout<<steps;
+// }
