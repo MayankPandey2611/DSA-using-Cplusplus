@@ -13,23 +13,49 @@ using namespace std;
 
 // QUESTION 80. Maximum Area of Longest Diagonal Rectangle.....
 
-int maxarea(vector<vector<int>>& d){
-    int ans = 0 , maxi =0;
-    for(auto& di : d){
-        int l = di[0] , w = di[1];
-        int t = l * l + w* w;
-        if(t > maxi){
-            maxi = t;
-            ans = l * w;
-        }
-        else if(t == maxi){
-            ans = max(ans , l*w);
-        }
-    }
-    return ans;
-}
-int main(){
-vector<vector<int>> dia{{3,4},{4,3}};
-int area = maxarea(dia);
-cout<<area;
-}
+// int maxarea(vector<vector<int>>& d){
+//     int ans = 0 , maxi =0;
+//     for(auto& di : d){
+//         int l = di[0] , w = di[1];
+//         int t = l * l + w* w;
+//         if(t > maxi){
+//             maxi = t;
+//             ans = l * w;
+//         }
+//         else if(t == maxi){
+//             ans = max(ans , l*w);
+//         }
+//     }
+//     return ans;
+// }
+// int main(){
+// vector<vector<int>> dia{{3,4},{4,3}};
+// int area = maxarea(dia);
+// cout<<area;
+// }
+
+
+
+// QUESTION  81. ALICE AND BOB PLAYING FLOWER GAME.....................
+
+
+// long long findways(int n , int m){
+//     long long xodd = (n+1) /2;
+//     long long xeven = n/2;
+//     long  long yodd = (m+1) /2;
+//     long long yeven = m/2;
+
+//     return xodd * yeven + xeven * yodd;
+// }
+
+// int main(){
+//     int n , m;
+//     cin>>n;
+//     cin>>m;
+
+//     int pairs = findways(n,m);
+//     cout<<pairs;
+// }
+
+
+
