@@ -59,3 +59,50 @@ using namespace std;
 
 
 
+// QUESTION 82. STRICKLY PALINDROMIC NUMBER....................
+
+
+// bool ispalindromic(string s){
+//     string r = s;
+//     reverse(s.begin(),s.end());
+//     return r == s;
+// }
+
+// string convertbase(int n , int base){
+//     string m;
+//     while(n > 0){
+//         m += to_string(n % base);
+//         n /= base;
+//     }
+//     reverse(m.begin(), m.end());
+//     return m;
+// }
+
+// bool check(int n){
+//     string s;
+//     for(int i=2; i<= n-2; i++){
+//         s = convertbase(n,i);
+//         if(!ispalindromic(s)){
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+
+
+// int main(){
+//     int n;
+//     cin>>n;
+
+//     bool ans = check(n);
+//     if(!ans){
+//         cout<<"false";
+//     }
+//     else{
+//         cout<<"true";
+//     }
+// }
+
+
+
+
