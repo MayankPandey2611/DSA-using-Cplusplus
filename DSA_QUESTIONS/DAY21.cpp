@@ -106,3 +106,86 @@ using namespace std;
 
 
 
+// QUESTION 83. ROMAN TO INTEGER ....
+
+
+// int rotoin(string s){
+//     unordered_map<char,int> val = {
+//         {'I',1},{'V',5},{'X',10},{'L',50},{'C',100},{'D',500},{'M',1000}
+//     };
+
+//     int n = s.size();
+//     int total =0;
+
+//     for(int i=0; i<n; i++){
+//         if(i + 1 < n && val[s[i]] < val[s[i+1]]){
+//             total -= val[s[i]];
+//         }
+//         else{
+//             total += val[s[i]];
+//         }
+//     }
+//     return total;
+// }
+
+// int main(){
+//     string s;
+//     cin>>s;
+
+//     int ans = rotoin(s);
+//     cout<<ans;
+// }
+
+
+// QUESTION 84. LONGEST COMMON PREFIX...............
+
+
+// string prefix(vector<string>& str){
+
+//     if(str.empty()){
+//         return "";
+//     }
+
+//     string res = str[0];
+
+//     for(int i = 1 ; i <str.size(); i++){
+//         while(str[i].find(res) != 0){
+//             res = res.substr(0,res.size()-1);
+//             if(res.empty()){
+//                 return "";
+//             }
+//         }
+//     }
+//     return res;
+
+
+// }
+
+// int main(){
+//     vector<string> str {"","","",""};
+
+//     string ans = prefix(str);
+//     cout<<ans;
+// }
+
+
+
+// QUESTION 85. BEST TIME TO BUY AND SELL THE STOCK.........................
+
+int bestprofit(vector<int>& p){
+    int minp = INT_MAX;
+    int maxp = 0;
+
+    for(int i : p){
+        minp = min(minp , i);
+        maxp = max(maxp , i - minp);
+    }
+    return maxp;
+}
+
+
+int main(){
+    vector<int> price{7,1,4,2,8};
+    int profit = bestprofit(price);
+    cout<<"profit = "<<profit;
+}
