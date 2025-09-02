@@ -172,20 +172,20 @@ using namespace std;
 
 // QUESTION 85. BEST TIME TO BUY AND SELL THE STOCK.........................
 
-int bestprofit(vector<int>& p){
-    int minp = INT_MAX;
-    int maxp = 0;
+// int bestprofit(vector<int>& p){
+//     int minp = INT_MAX;
+//     int maxp = 0;
 
-    for(int i : p){
-        minp = min(minp , i);
-        maxp = max(maxp , i - minp);
-    }
-    return maxp;
-}
+//     for(int i : p){
+//         minp = min(minp , i);
+//         maxp = max(maxp , i - minp);
+//     }
+//     return maxp;
+// }
 
 
-int main(){
-    vector<int> price{7,1,4,2,8};
-    int profit = bestprofit(price);
-    cout<<"profit = "<<profit;
-}
+// int main(){
+//     vector<int> price{7,1,4,2,8};
+//     int profit = bestprofit(price);
+//     cout<<"profit = "<<profit;
+// }
