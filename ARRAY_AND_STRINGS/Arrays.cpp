@@ -1,8 +1,8 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
+// int main()
+// {
 
   // 1.
   //    int arr[5];
@@ -354,9 +354,9 @@ int main()
 //     }
 //    cout<<endl;
 //   }
+// }
 
-
-
+// }
 // 24. CHECK THE ARRAY IS IN ASCENTING ORDER OR NOT. 
 
 // int arr[]={1,2,3,4,5};
@@ -524,15 +524,180 @@ int main()
 
 // 32. FIND THE UNIQUE ELEMENT..(ASKED IN TCS)
 
-int arr[]={2,3,5,4,5,2,3,4,7};
-int size=sizeof(arr)/sizeof(arr[0]);
-int unique=0;
+// int arr[]={2,3,5,4,5,2,3,4,7};
+// int size=sizeof(arr)/sizeof(arr[0]);
+// int unique=0;
 
 
-for(int i=0; i<size; i++){
-  unique =unique^arr[i]; 
+// for(int i=0; i<size; i++){
+//   unique =unique^arr[i]; 
+//     }
+//     cout<<unique;
+// }
+
+
+
+
+// 33. 
+
+// int main() {
+//     vector<int> arr = {1, 2, 1, 3, 2, 1, 8, 9, 7, 6, 4, 3, 5, 4, 6};
+//     unordered_map<int, int> freq;
+
+//     // Count frequencies
+//     for (int num : arr) {
+//         freq[num]++;
+//     }
+
+//     // Find the mode
+//     int mode = arr[0];
+//     int maxFreq = 0;
+    
+//     for (auto [key, val] : freq) {
+//         if (val > maxFreq) {
+//             maxFreq = val;
+//             mode = key;
+//         }
+//     }
+
+//     cout << "Mode (most frequent element): " << mode << " (occurs " << maxFreq << " times)" << endl;
+//     return 0;
+// }
+
+
+// 34. 
+
+// #include<unordered_map>
+// int main(){
+// int arr[]={1,2,1,2,3,1};
+
+// unordered_map<int,int>freq;
+
+// for(auto c:arr){
+//   freq[c]++;
+// }
+// for (auto k:freq){
+//   cout<<k.first<< "="<<k.second;
+// }
+// }
+
+
+// 35. 
+
+// #include<vector>
+
+
+// vector<string>summaryrange(vector<int>& arr){
+//   vector<string>res;
+//   int i = 0;
+//   int n  = arr.size();
+
+//   while(i < n){
+//     int s = arr[i];
+
+//     while(i+1 < n && arr[i+1] == arr[i]+1){
+//       i++;
+//     }
+//     int e = arr[i];
+
+//     if (s == e){
+//       res.push_back(to_string(s));
+//     }
+//     else{
+//       res.push_back(to_string(s) + "->" + to_string(e));
+//     }
+//     i++;
+//   }
+//   return res;
+// }
+
+// int main(){
+//   vector<int>arr{0,2,4,5,6,8,9};
+//   vector<string>ans = summaryrange(arr);
+//   for(auto i:ans){
+//     cout<<i<<" ";
+//   }
+// }
+
+
+// 36.
+
+// #include<vector>
+// #include<algorithm>
+// int missingnumber(vector<int>& arr){
+
+//   //-------------method 1. (OPTIMIZED........)
+
+//   int n = arr.size();
+//   int totalsum = n * (n+1) / 2;
+//   int currsum = 0;
+//   for(int i:arr){
+//     currsum += i;
+//   }
+//   return totalsum - currsum;
+
+
+
+//   //--------------method 2.
+
+//   // int n = arr.size();
+//   // sort(arr.begin() , arr.end());
+
+//   // for(int i=0; i<n; i++){
+//   //   if(arr[i] != i){
+//   //     return i;
+//   //   }
+//   // }
+//   // return n;
+
+// }
+
+
+// int main(){
+//   vector<int>arr{0,3,1};
+//   cout<<missingnumber(arr);
+ 
+  
+// }
+
+
+// 37. 
+#include<vector>
+#include<algorithm>
+
+vector<int> intersection(vector<int>&n1,vector<int>&n2){
+  sort(n1.begin(),n1.end());
+  sort(n2.begin(),n2.end());
+
+  vector<int>res;
+  int i=0,j=0;
+
+  while (i < n1.size() && j < n2.size())
+  {
+    if(n1[i] < n2[j]){
+      i++;
     }
-    cout<<unique;
+    else if(n1[i] > n2[j]){
+      j++;
+    }
+    else{
+      if(res.empty() || res.back() != n1[i]){
+        res.push_back(n1[i]);
+      }
+      i++;
+      j++;
+    }
+  }
+  return res;
+  
 }
+int main(){
+  vector<int>num1{4,9,8,5,7,9};
+  vector<int>num2{9,4,4,1};
 
+  vector<int>res = intersection(num1,num2);
 
+  for(auto i : res){
+    cout<<i<<" ";
+  }
+}
